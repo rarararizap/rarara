@@ -10,7 +10,5 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'BokeController@index')->name('boke.index');
+Route::get('/odais', 'OdaiController@index')->name('odai.index');
