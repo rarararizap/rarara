@@ -20,4 +20,3 @@
 @endforeach
 </ul>
 
-{!! $bokes->render() !!}
