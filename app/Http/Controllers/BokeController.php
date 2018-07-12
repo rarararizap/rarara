@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Boke;
 use App\User;
+use App\Odai;
 use Illuminate\Http\Request;
 
 class BokeController extends Controller
@@ -15,7 +16,7 @@ class BokeController extends Controller
             $bokes = \DB::table('bokes')
             ->join('users', 'bokes.user_id', '=', 'users.id')
             ->join('odais', 'bokes.odai_id', '=', 'odais.id')
-            ->select('users.nickname','bokes.content','odais.filename','bokes.created_at','bokes.user_id')
+            ->select('users.nickname','bokes.content','odais.filename','bokes.created_at','bokes.user_id','bokes.odai_id')
             ->paginate(10);
     
              return view('index', ['bokes' => $bokes]);
@@ -23,6 +24,18 @@ class BokeController extends Controller
          
       return view('welcome');  
              
+    }
+    
+     public function create($id)
+    {
+        $boke = new Boke;
+        $odai = Odai::find($id);
+
+        return view('users.create', [
+            'boke' => $boke,
+            'odai' => $odai,
+        ]);
+    
     }
     
     public function store(Request $request)
@@ -33,10 +46,12 @@ class BokeController extends Controller
 
         $request->user()->bokes()->create([
             'content' => $request->content,
+            'odai_id' => $request->odai_id,
         ]);
 
-        return redirect()->back();
+         return redirect('/');
     }
+    
     
      public function destroy($id)
     {
