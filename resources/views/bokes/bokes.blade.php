@@ -15,6 +15,10 @@
                 <p>{{ $boke->nickname}}が{{$boke->filename}}で{{$boke->content}}とぼけた。</p>
             </div>
             
+            <div>
+                {!! link_to_route('bokes.create', 'ボケて',$boke->odai_id) !!}
+            </div>
+            
         </div>
     </li>
 @endforeach

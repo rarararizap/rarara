@@ -34,4 +34,7 @@ Route::group(['middleware' => 'auth'], function () {
     });
 
     Route::resource('bokes', 'BokeController', ['only' => ['store', 'destroy']]);
+    Route::get('bokes/create/{id}', 'BokeController@create')->name('bokes.create'); 
+
+
  });

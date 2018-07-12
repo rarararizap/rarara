@@ -21,7 +21,7 @@ class UsersController extends Controller
         $bokes = \DB::table('bokes')
         ->join('users', 'bokes.user_id', '=', 'users.id')
         ->join('odais', 'bokes.odai_id', '=', 'odais.id')
-        ->select('users.nickname','bokes.content','odais.filename','bokes.created_at')
+        ->select('users.nickname','bokes.content','odais.filename','bokes.created_at','bokes.user_id')
         ->paginate(10);
          
            $data = [
@@ -33,7 +33,9 @@ class UsersController extends Controller
 
         return view('users.show', $data);
     }
-     
+    
+  
+    
      
      
      public function favorites($id)
