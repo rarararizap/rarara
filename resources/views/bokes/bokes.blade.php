@@ -15,7 +15,7 @@
             </div>
             
             <div>
-                {!! link_to_route('bokes.create', 'ボケて',$boke->odai_id) !!}
+                {!! link_to_route('bokes.create', 'ボケて',['id' => $boke->odai_id]) !!}
             </div>
             
         </div>
