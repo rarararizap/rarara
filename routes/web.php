@@ -34,9 +34,11 @@ Route::group(['middleware' => 'auth'], function () {
     });
 
     Route::resource('bokes', 'BokeController', ['only' => ['store', 'destroy']]);
+    Route::get('bokes/create/{id}', 'BokeController@create')->name('bokes.create'); 
+   
+    Route::get('ranking', 'RankingController@index')->name('ranking');
+
+
+
  });
- 
-Route::get('ranking', 'RankingController@index')->name('ranking');
-
-
  
