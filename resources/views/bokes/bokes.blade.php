@@ -1,4 +1,3 @@
-@extends('layouts.app')
 
 
 <ul class="media-list">
@@ -20,3 +19,4 @@
 @endforeach
 </ul>
 
+{!! $bokes->render() !!}

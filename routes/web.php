@@ -38,11 +38,5 @@ Route::group(['middleware' => 'auth'], function () {
  
 Route::get('ranking', 'RankingController@index')->name('ranking');
 
-Route::get('ranking/odai1', 'RankingController@odai1')->name('ranking');
-Route::get('ranking/odai2', 'RankingController@odai2')->name('ranking');
-Route::get('ranking/odai3', 'RankingController@odai3')->name('ranking');
-Route::get('ranking/odai4', 'RankingController@odai4')->name('ranking');
-Route::get('ranking/odai5', 'RankingController@odai5')->name('ranking');
-Route::get('ranking/odai6', 'RankingController@odai6')->name('ranking');
 
  
