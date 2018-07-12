@@ -12,6 +12,6 @@
                 <li role="presentation" class="{{ Request::is('odais/6/ranking') ? 'active' : '' }}"><a href="{{ route('ranking.show6')}}">odai6ランキング</a></li>
             </ul>
 </div>
-    @include('bokes.bokes', ['bokes' => $bokes])
+    @include('bokes.ranking', ['bokes' => $bokes])
 
 @endsection

@@ -11,6 +11,6 @@
                 <li role="presentation" class="{{ Request::is('odais/5/ranking') ? 'active' : '' }}"><a href="{{ route('ranking.show5')}}">odai5ランキング</a></li>
                 <li role="presentation" class="{{ Request::is('odais/6/ranking') ? 'active' : '' }}"><a href="{{ route('ranking.show6')}}">odai6ランキング</a></li>
             </ul>
-    @include('bokes.bokes', ['bokes' => $bokes])
+    @include('bokes.ranking', ['bokes' => $bokes])
 </div>
 @endsection
