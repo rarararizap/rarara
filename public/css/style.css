@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+
+body {
+   background: #00CC9F;
+
+}
+
+.navbar{
+   color: black;
+   background: #00CC9F;
+   border-bottom:#00CC9F;
+   
+}
+
+.navbar a{
+  color:black;
+}
+
+
