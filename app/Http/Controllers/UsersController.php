@@ -18,13 +18,9 @@ class UsersController extends Controller
      public function show($id)
     {
         $user = User::find($id);
-        $bokes = \DB::table('bokes')
-        ->join('users', 'bokes.user_id', '=', 'users.id')
-        ->join('odais', 'bokes.odai_id', '=', 'odais.id')
-        ->select('users.nickname','bokes.content','odais.filename','bokes.created_at','bokes.user_id','bokes.odai_id')
-        ->paginate(10);
-         
-           $data = [
+        $bokes = $user->bokes()->paginate(10);
+        
+         $data = [
             'user' => $user,
             'bokes' => $bokes,
         ];
@@ -41,11 +37,11 @@ class UsersController extends Controller
      public function favorites($id)
     {
         $user = User::find($id);
-        $favorites = $user->favorite_bokes()->paginate(10);
+        $bokes = $user->favorite_bokes()->paginate(10);
 
         $data = [
             'user' => $user,
-            'favorites' => $favorites,
+            'bokes' => $bokes,
         ];
 
         $data += $this->counts($user);
