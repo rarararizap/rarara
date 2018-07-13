@@ -27,8 +27,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('odais', 'OdaiController@index')->name('odai.index');
 
     Route::group(['prefix' => 'bokes/{id}'], function (){ 
-        Route::post('favorite', 'UserFavoriteController@favo')->name('user.favorite');
-        Route::delete('unfavorite', 'UserFavoriteController@unfavo')->name('user.unfavorite');
+        Route::post('favorite', 'UserFavoriteController@store')->name('user.favorite');
+        Route::delete('unfavorite', 'UserFavoriteController@destroy')->name('user.unfavorite');
         
         Route::get('create', 'BokeController@create')->name('bokes.create'); 
         Route::get('favorites', 'UsersController@favorites')->name('users.favorites'); 

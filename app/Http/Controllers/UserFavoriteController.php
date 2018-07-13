@@ -12,13 +12,13 @@ use App\Odai;
 
 class UserFavoriteController extends Controller
 {
-     public function favo(Request $request, $bokeId)
+     public function store(Request $request, $bokeId)
     {
         \Auth::user()->favorite($bokeId);
         return redirect()->back();
     }
 
-    public function unfavo($bokeId)
+    public function destroy($bokeId)
     {
         \Auth::user()->unfavorite($bokeId);
         return redirect()->back();
