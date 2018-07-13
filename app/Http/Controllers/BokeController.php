@@ -16,7 +16,7 @@ class BokeController extends Controller
             $bokes = \DB::table('bokes')
             ->join('users', 'bokes.user_id', '=', 'users.id')
             ->join('odais', 'bokes.odai_id', '=', 'odais.id')
-            ->select('users.nickname','bokes.content','odais.filename','bokes.created_at','bokes.user_id','bokes.odai_id')
+            ->select('bokes.id','users.nickname','bokes.content','odais.filename','bokes.created_at','bokes.user_id','bokes.odai_id')
             ->paginate(10);
     
              return view('index', ['bokes' => $bokes]);
