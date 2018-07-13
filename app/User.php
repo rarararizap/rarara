@@ -33,7 +33,7 @@ class User extends Authenticatable
         return $this->hasMany(Boke::class)
                 ->join('users', 'bokes.user_id', '=', 'users.id')
                 ->join('odais', 'bokes.odai_id', '=', 'odais.id')
-                ->select('users.nickname','bokes.content','odais.filename','bokes.created_at');
+                ->select('bokes.id','users.nickname','bokes.content','odais.filename','bokes.odai_id','bokes.created_at');
                 
      }
     
