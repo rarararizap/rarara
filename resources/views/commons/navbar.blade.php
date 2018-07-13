@@ -22,7 +22,7 @@
                                 <li>{!! link_to_route('ranking.overall', '人気投稿') !!}</li>
                                 <li>{!! link_to_route('odai.index', 'お題一覧',['id' => Auth::id()]) !!}</li>
                                 <li role="separator" class="divider"></li>
-                                <li>{!! link_to_route('logout.get', '') !!}ログアウト</li>
+                                <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
                             </ul>
                         </li>
                     @else

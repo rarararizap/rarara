@@ -25,17 +25,18 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
 
     Route::get('odais', 'OdaiController@index')->name('odai.index');
-  
-    Route::group(['prefix' => 'bokes/{id}'], function () {
+
+    Route::group(['prefix' => 'bokes/{id}'], function (){ 
         Route::post('favorite', 'UserFavoriteController@store')->name('user.favorite');
         Route::delete('unfavorite', 'UserFavoriteController@destroy')->name('user.unfavorite');
-        Route::get('favorites', 'UsersController@favorites')->name('users.favorites');    
         
+        Route::get('create', 'BokeController@create')->name('bokes.create'); 
+        Route::get('favorites', 'UsersController@favorites')->name('users.favorites'); 
+    
     });
 
     Route::resource('bokes', 'BokeController', ['only' => ['store', 'destroy']]);
-    Route::get('bokes/create/{id}', 'BokeController@create')->name('bokes.create'); 
-  
+
     Route::get('ranking','RankingController@index')->name('ranking.overall');
     Route::get('ranking/odai1', 'RankingController@show1')->name('ranking.show1');
     Route::get('ranking/odai2', 'RankingController@show2')->name('ranking.show2');
