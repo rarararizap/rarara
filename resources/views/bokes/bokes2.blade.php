@@ -9,11 +9,10 @@
         </div>
         <div class="media-body">
             <div>
-                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} 
+                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} <span class="text-muted">posted at {{ $boke->created_at }}</span>
             </div>
-             <img src="{{ url($boke->filename) }}" alt="odais">
             <div>
-                <p>{{$boke->content}}</p>
+                <p>{{ $boke->nickname}}が{{$boke->filename}}で{{$boke->content}}とぼけた。</p>
             </div>
             
             <div>
@@ -22,7 +21,12 @@
 
                 @include('bokes.favo_button', ['boke' => $boke])
                 
-                
+                 @if (Auth::user()->id == $boke->user_id)
+                    {!! Form::open(['route' => ['bokes.destroy', $boke->id], 'method' => 'delete']) !!}
+                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
+                    {!! Form::close() !!}
+                 @endif
+            
         </div>
     </li>
 @endforeach
