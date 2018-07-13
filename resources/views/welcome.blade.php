@@ -5,7 +5,9 @@
     <div class="contents">
         <div class="contents_inner">
             <h1>Welcome to the ServiceName</h1>
-            {!! link_to_route('signup.get', 'Sign up now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            
+            <a href="login" class="btn">LOGIN</a>
+            
             {!! link_to_route('login', 'Log in now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
         </div>
     </div>
@@ -47,6 +49,33 @@ body:before {
   padding: 225px 10px ;
   color: #fff;
   text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #f55555;
+    color: white;
+    width: 120px;
+    height: 120px;
+    font-size: 21px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #d29963;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.43), 1px 1px rgba(0, 0, 0, 0.49);
+    transition: .4s;
+}
+.btn:active{
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+    border-bottom: none;
 }
 
 
