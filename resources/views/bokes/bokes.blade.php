@@ -2,6 +2,7 @@
 
 <ul class="media-list">
 @foreach ($bokes as $boke)
+
     <li class="media">
         <div class="media-left">
             <img class="media-object img-rounded" src="{{ Gravatar::src($boke->nickname, 50) }}" alt="">
