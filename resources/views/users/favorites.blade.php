@@ -18,7 +18,9 @@
                 <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">TimeLine <span class="badge">{{ $count_bokes }}</span></a></li>
                 <li role="presentation" class="{{ Request::is('bokes/*/favorites') ? 'active' : '' }}"><a href="{{ route('users.favorites', ['id' => $user->id]) }}">Favorites <span class="badge">{{ $count_favorite_bokes }}</span></a></li>
             </ul>
-            @include('bokes.bokes', ['bokes' => $favorites])
+            @if (count($bokes) > 0)
+                @include('bokes.bokes', ['bokes' => $bokes])
+            @endif        
         </div>
     </div>
 @endsection

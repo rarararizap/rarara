@@ -19,7 +19,6 @@
                  <li role="presentation" class="{{ Request::is('users/*/favorites') ? 'active' : '' }}"><a href="{{ route('users.favorites', ['id' => $user->id]) }}">Favorites <span class="badge">{{ $count_favorite_bokes }}</span></a></li>
                
             </ul>
-             
             @if (count($bokes) > 0)
                @include('bokes.bokes', ['bokes' => $bokes])
             @endif

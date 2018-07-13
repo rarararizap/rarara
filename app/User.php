@@ -40,10 +40,10 @@ class User extends Authenticatable
     public function favorite_bokes()
      {
         return $this->belongsToMany(Boke::class, 'user_favorite', 'user_id', 'favorite_id')
-                ->join('users', 'bokes.user_id', '=', 'users.id')
-                ->join('odais', 'bokes.odai_id', '=', 'odais.id')
-                ->select('users.nickname','bokes.content','odais.filename','bokes.created_at')
-                ->withTimestamps();     
+        ->join('users', 'bokes.user_id', '=', 'users.id')
+        ->join('odais', 'bokes.odai_id', '=', 'odais.id')
+        ->select('users.nickname','bokes.content','odais.filename','bokes.created_at')
+        ->withTimestamps();
     }
      
      public function favorite($bokeId)
