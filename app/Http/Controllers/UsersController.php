@@ -1,5 +1,6 @@
 <?php
 
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -29,24 +30,20 @@ class UsersController extends Controller
 
         return view('users.show', $data);
     }
-    
-  
-    
-     
-     
-     public function favorites($id)
-    {
-        $user = User::find($id);
-        $bokes = $user->favorite_bokes()->paginate(10);
+ 
+    public function favorites($id)
+        {
+          $user = User::find($id);
+          $bokes = $user->favorite_bokes()->paginate(10);
 
-        $data = [
-            'user' => $user,
-            'bokes' => $bokes,
-        ];
+          $data = [
+              'user' => $user,
+              'bokes' => $bokes,
+          ];
 
-        $data += $this->counts($user);
+          $data += $this->counts($user);
 
-        return view('users.favorites', $data);
-        
+          return view('users.favorites', $data);
+            
+        }
     }
-}
