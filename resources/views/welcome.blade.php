@@ -5,8 +5,16 @@
     <div class="contents">
         <div class="contents_inner">
             <h1>Welcome to the ServiceName</h1>
-            {!! link_to_route('signup.get', 'Sign up now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
-            {!! link_to_route('login', 'Log in now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            
+            <a href="login">
+              <button type="button" class="btn-circle btn-xl">ログイン</button>
+            </a>
+            
+            
+            <a href="signup">
+              <button type="button" class="btn-circle btn-xl">登録</button>
+            </a>
+            
         </div>
     </div>
 </div>
@@ -48,6 +56,30 @@ body:before {
   color: #fff;
   text-align: center;
 }
+
+.btn-circle{
+    display: inline-block;
+    text-decoration: none;
+    background: #ff5959;
+    color: white;
+    width: 120px;
+    height: 120px;
+    font-size: 21px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border: solid 3px #ff5959;
+    /*transition: 0.4s;*/
+}
+
+.btn-circle:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
 
 
 </style>
