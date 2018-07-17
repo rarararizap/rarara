@@ -44,6 +44,7 @@ class RankingController extends Controller
         ->take(10)
         ->get();
     
+    
         
         
         return view('ranking.odai1', ['bokes'=>$bokes]);
