@@ -6,9 +6,15 @@
         <div class="contents_inner">
             <h1>Welcome to the ServiceName</h1>
             
-            <a href="login" class="btn">LOGIN</a>
+            <a href="login">
+              <button type="button" class="btn-circle btn-xl">ログイン</button>
+            </a>
             
-            {!! link_to_route('login', 'Log in now!', null, ['class' => 'btn btn-lg btn-primary']) !!}
+            
+            <a href="signup">
+              <button type="button" class="btn-circle btn-xl">登録</button>
+            </a>
+            
         </div>
     </div>
 </div>
@@ -51,10 +57,10 @@ body:before {
   text-align: center;
 }
 
-.btn{
+.btn-circle{
     display: inline-block;
     text-decoration: none;
-    background: #f55555;
+    background: #ff5959;
     color: white;
     width: 120px;
     height: 120px;
@@ -65,18 +71,15 @@ body:before {
     vertical-align: middle;
     overflow: hidden;
     font-weight: bold;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
-    border-bottom: solid 3px #d29963;
-    text-shadow: -1px -1px rgba(255, 255, 255, 0.43), 1px 1px rgba(0, 0, 0, 0.49);
-    transition: .4s;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border: solid 3px #ff5959;
+    /*transition: 0.4s;*/
 }
-.btn:active{
-    -ms-transform: translateY(2px);
-    -webkit-transform: translateY(2px);
-    transform: translateY(2px);
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
-    border-bottom: none;
+
+.btn-circle:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
+
 
 
 </style>
