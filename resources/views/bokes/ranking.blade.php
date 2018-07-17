@@ -4,7 +4,7 @@
         <div class="container text-center ">
         <div class="media-body">
             <div>
-                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} <span class="text-muted">posted at {{ $boke->created_at }}</span>
+                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
             </div>
             <div>
                 {{$boke->filename}}

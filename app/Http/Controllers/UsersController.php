@@ -19,7 +19,7 @@ class UsersController extends Controller
      public function show($id)
     {
         $user = User::find($id);
-        $bokes = $user->bokes()->paginate(10);
+        $bokes = $user->bokes()->orderBy('created_at', 'desc')->paginate(10);
         
          $data = [
             'user' => $user,
@@ -34,7 +34,7 @@ class UsersController extends Controller
     public function favorites($id)
         {
           $user = User::find($id);
-          $bokes = $user->favorite_bokes()->paginate(10);
+          $bokes = $user->favorite_bokes()->orderBy('created_at', 'desc')->paginate(10);
 
           $data = [
               'user' => $user,

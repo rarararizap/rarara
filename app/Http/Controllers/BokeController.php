@@ -17,6 +17,7 @@ class BokeController extends Controller
             ->join('users', 'bokes.user_id', '=', 'users.id')
             ->join('odais', 'bokes.odai_id', '=', 'odais.id')
             ->select('bokes.id','users.nickname','bokes.content','odais.filename','bokes.created_at','bokes.user_id','bokes.odai_id')
+            ->orderBy('created_at', 'desc')
             ->paginate(10);
     
              return view('index', ['bokes' => $bokes]);
