@@ -24,7 +24,11 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 Route::group(['middleware' => 'auth'], function () {
     Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
 
-    Route::get('odais', 'OdaiController@index')->name('odai.index');
+    Route::get('odais', 'OdaiController@index')->name('odais.index');
+    Route::get('odais/{id}', 'OdaiController@show')->name('odais.show');
+    
+    
+    
 
     Route::group(['prefix' => 'bokes/{id}'], function (){ 
         Route::post('favorite', 'UserFavoriteController@favo')->name('user.favorite');
