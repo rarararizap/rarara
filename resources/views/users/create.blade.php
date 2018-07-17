@@ -8,7 +8,7 @@
                 <div class="form-group">
                     {!! Form::hidden('odai_id', $odai->id) !!}
                     {!! Form::label('content', 'ボケる') !!}
-                    {!! Form::text('content',null, ['class' => 'form-control']) !!}
+                    {!! Form::text('content',null, ['class' => 'form-control','autocomplete' => 'off']) !!}
                 </div>
 
                 {!! Form::submit('ボケる', ['class' => 'btn btn-warning btn-block']) !!}

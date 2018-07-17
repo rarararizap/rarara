@@ -9,7 +9,7 @@
         </div>
         <div class="media-body">
             <div>
-                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} <span class="text-muted">posted at {{ $boke->created_at }}</span>
+                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
             </div>
             <div>
                 <p>{{ $boke->nickname}}が{{$boke->filename}}で{{$boke->content}}とぼけた。</p>
