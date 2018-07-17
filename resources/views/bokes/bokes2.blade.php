@@ -11,8 +11,9 @@
             <div>
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
             </div>
+                <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais"></a>            
             <div>
-                <p>{{ $boke->nickname}}が{{$boke->filename}}で{{$boke->content}}とぼけた。</p>
+                <p>{{$boke->content}}とぼけた。</p>
             </div>
             
             <div>

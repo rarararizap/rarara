@@ -11,7 +11,7 @@
             <div>
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} 
             </div>
-             <img src="{{ url($boke->filename) }}" alt="odais">
+              <a href="odais/{{$boke->odai_id}}"><img src="{{ url($boke->filename) }}" alt="odais"></a></a>
             <div>
                 <p>{{$boke->content}}</p>
             </div>

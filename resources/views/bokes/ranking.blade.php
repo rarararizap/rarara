@@ -7,7 +7,7 @@
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
             </div>
             <div>
-                {{$boke->filename}}
+                <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais"></a>
             </div>
             <div>
                 {{$boke->content}}
