@@ -8,7 +8,7 @@
                 <li role="presentation" class="{{ Request::is('ranking/odai2') ? 'active' : '' }}"><a href="{{ route('ranking.show2')}}">odai2ランキング</a></li>
                 <li role="presentation" class="{{ Request::is('rankikg/odai3') ? 'active' : '' }}"><a href="{{ route('ranking.show3')}}">odai3ランキング</a></li>
                 <li role="presentation" class="{{ Request::is('ranking/odai4') ? 'active' : '' }}"><a href="{{ route('ranking.show4')}}">odai4ランキング</a></li>
-                <li role="presentation" class="{{ Request::is('ranking/0dai5') ? 'active' : '' }}"><a href="{{ route('ranking.show5')}}">odai5ランキング</a></li>
+                <li role="presentation" class="{{ Request::is('ranking/odai5') ? 'active' : '' }}"><a href="{{ route('ranking.show5')}}">odai5ランキング</a></li>
                 <li role="presentation" class="{{ Request::is('ranking/odai6') ? 'active' : '' }}"><a href="{{ route('ranking.show6')}}">odai6ランキング</a></li>
             </ul>
     @include('bokes.ranking', ['bokes' => $bokes])
