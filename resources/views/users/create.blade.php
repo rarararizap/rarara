@@ -2,7 +2,7 @@
 
 @section('content')
     <div>
-                <img src="{{ url($odai->filename) }}" alt="odais">
+                <img  class="odai_show" src="{{ url($odai->filename) }}" alt="odais">
             {!! Form::model($boke,['route' => 'bokes.store']) !!}
 
                 <div class="form-group">

@@ -18,6 +18,8 @@
                 @if (isset($boke->count))
                   <class="text-leftr">いいね：{{ $boke->count}} 
                 @endif
+                
+                @include('bokes.favo_button', ['boke' => $boke])
             </div>
             
         </div>
