@@ -5,15 +5,13 @@
                 <img src="{{ url($odai->filename) }}" alt="odais">
             {!! Form::model($boke,['route' => 'bokes.store']) !!}
 
-                <div class=forms>
                 <div class="form-group">
                     {!! Form::hidden('odai_id', $odai->id) !!}
                     {!! Form::label('content', 'ボケる') !!}
                     {!! Form::text('content',null, ['class' => 'form-control','autocomplete' => 'off']) !!}
                 </div>
-                </div>
-
-                {!! Form::submit('ボケる', ['class' => 'btn btn-warning btn-block']) !!}
+    
+                {!! Form::submit('送信', ['class' => 'btn-radius']) !!}
                 
             {!! Form::close() !!}
      </div>
@@ -21,16 +19,19 @@
 
 <style type="text/css">
 
-form{
-    border-radius: 100px 25px
+.btn-radius{
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 3px #f55555;
+
 }
 
-input#submit_button {
-    width: 50px;
-    height: 10px;
-    border-radius: 100px 25px;
-
+.btn-radius:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
 
 </style>
-
 
