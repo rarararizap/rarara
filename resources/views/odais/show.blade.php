@@ -2,12 +2,13 @@
 
 @section('content')
     
-    
-    <img src="{{ url($odai->filename) }}" alt="odai1">
-     {!! link_to_route('bokes.create', 'ボケて',$odai->id) !!}
-                
     <h1>みんなのボケ</h1>
     
+    <img class="odai_show" src="{{ url($odai->filename) }}" alt="odai1">
+    <div class="boke_button">
+     {!! link_to_route('bokes.create', 'ボケる',$odai->id) !!}
+    </div>            
+
    <ul class="media-list">
 @foreach ($bokes as $boke)
 
@@ -37,3 +38,5 @@
     
    {!! $bokes->render() !!}
 @endsection
+
+

@@ -17,9 +17,20 @@ body {
   color:black;
 }
 
-.img{
-   width:600px;
-   height:600px;
+footer{
+    margin: 0 auto 20px;
+    padding: 0;
+    text-align: center;
+    color: Grey;
+}
+
+.odais{
+    width:500px;
+    height:500px;
 }
 
 
+.odai_show{
+   width:800px;
+   height:650px;
+}
