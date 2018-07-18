@@ -56,3 +56,9 @@
     font-size:50px;
 }
 
+.media{
+    border:10px dotted white;
+    border-radius: 30px;
+}
+
+

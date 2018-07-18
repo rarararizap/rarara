@@ -49,9 +49,8 @@
 form{
     display:inline-block;
 }
-</style>
 
-<style type='text/css'>
+
 .container { 
     text-align:center;
 }
@@ -66,3 +65,10 @@ form{
     font-size:50px;
     float:left;
 }
+
+.media{
+    border:10px dotted white;
+    border-radius: 30px;
+}
+
+</style>

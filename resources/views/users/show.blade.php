@@ -25,3 +25,12 @@
     </div>
 @endsection
 
+
+
+<style>
+
+li {
+    font-size:40px;
+}
+
+</style>
