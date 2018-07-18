@@ -18,9 +18,10 @@
             
             <div>
                 {!! link_to_route('bokes.create', 'ボケて',['id' => $boke->odai_id]) !!}
+                 @include('bokes.favo_button', ['boke' => $boke])
             </div>
 
-                @include('bokes.favo_button', ['boke' => $boke])
+               
                 
                 
         </div>
