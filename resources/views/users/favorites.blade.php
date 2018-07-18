@@ -24,3 +24,11 @@
         </div>
     </div>
 @endsection
+
+<style>
+
+ul li {
+    font-size:40px;
+}
+
+</style>

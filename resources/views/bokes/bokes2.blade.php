@@ -49,9 +49,8 @@
 form{
     display:inline-block;
 }
-</style>
 
-<style type='text/css'>
+
 .container { 
     text-align:center;
 }
@@ -64,6 +63,13 @@ form{
     font-size:50px;
     float:left;
 }
+
+.media{
+    border:10px dotted white;
+    border-radius: 30px;
+}
+
+</style>
 
 .btn-radius{
     background-color: #F55555;
@@ -78,3 +84,4 @@ form{
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     
 }
+

@@ -65,7 +65,16 @@
     color: white;
 }
 
+
+.media{
+    border:10px dotted white;
+    border-radius: 30px;
+}
+
+
+
 .btn-radius:hover {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     
 }
+
