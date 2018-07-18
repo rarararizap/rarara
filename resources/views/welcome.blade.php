@@ -4,15 +4,15 @@
 <div class="box">
     <div class="contents">
         <div class="contents_inner">
-            <h1>Welcome to the ServiceName</h1>
+            <h1 class='wf-nicomoji'>Welcome to the ServiceName</h1>
             
             <a href="login">
-              <button type="button" class="btn-circle btn-xl">ログイン</button>
+              <button type="button" class="btn-circle btn-xl wf-nicomoji">ログイン</button>
             </a>
             
             
             <a href="signup">
-              <button type="button" class="btn-circle btn-xl">登録</button>
+              <button type="button" class="btn-circle btn-xl wf-nicomoji">とうろく</button>
             </a>
             
         </div>
@@ -65,7 +65,7 @@ body:before {
     color: white;
     width: 120px;
     height: 120px;
-    font-size: 21px;
+    font-size: 30px;
     line-height: 120px;
     border-radius: 50%;
     text-align: center;
@@ -74,7 +74,7 @@ body:before {
     font-weight: bold;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     border: solid 3px #ff5959;
-    /*transition: 0.4s;*/
+    margin: 20px;
 }
 
 .btn-circle:hover{
