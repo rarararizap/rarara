@@ -9,8 +9,8 @@
             <div>
                 <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais"></a>
             </div>
-            <div>
-                {{$boke->content}}
+            <div class='media-text'>
+                <p>{{$boke->content}}</p>
             </div>
             
             <div>
@@ -28,3 +28,12 @@
 @endforeach
 </ul>
 
+
+<style tipe='text/css'>
+.container { 
+    text-align:center;
+}
+
+.media-text p {
+    font-size:100px;
+}
