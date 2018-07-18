@@ -47,6 +47,7 @@ body:before {
   transform: rotate(3deg);
   z-index: -1;
 }
+
 .contents_inner {
   width: 100%;
   max-width: 640px;
