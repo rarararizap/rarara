@@ -21,16 +21,16 @@
             
             <div class='link-text'>
                 {!! link_to_route('bokes.create', 'ボケて',['id' => $boke->odai_id]) !!}
-            </div>
+            
 
                 @include('bokes.favo_button', ['boke' => $boke])
                 
                  @if (Auth::user()->id == $boke->user_id)
                     {!! Form::open(['route' => ['bokes.destroy', $boke->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
+                        {{Form::button('<i class="glyphicon glyphicon-trash "></i>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
                     {!! Form::close() !!}
                  @endif
-            
+            </div>
         </div>
     </li>
 @endforeach
@@ -39,7 +39,19 @@
 {!! $bokes->render() !!}
 
 
-<style tipe='text/css'>
+
+<style>
+    
+.glyphicon{
+        color: #00cc9f;
+    }
+    
+form{
+    display:inline-block;
+}
+</style>
+
+<style type='text/css'>
 .container { 
     text-align:center;
 }

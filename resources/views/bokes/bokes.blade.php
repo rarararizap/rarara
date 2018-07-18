@@ -19,11 +19,22 @@
                 <p>{{$boke->content}}</p>
             </div>
             
+
+            <div>
+                {!! link_to_route('bokes.create', 'ボケて',['id' => $boke->odai_id]) !!}
+                
+            </div>
+
+               
+                
+                
+
             <div class='link-text'>
                 
                 {!! link_to_route('bokes.create', 'ボケて',['id' => $boke->odai_id]) !!}<span>@include('bokes.favo_button', ['boke' => $boke])</span>
-
+                    @include('bokes.favo_button', ['boke' => $boke])
             </div>
+
 
         </div>
     </li>
