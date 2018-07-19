@@ -16,6 +16,7 @@
      
 .btn {
     border-radius:50%;
+    width:;
 }
 
 form{

@@ -13,7 +13,7 @@
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
             </div>
             
-                <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais"></a>            
+                <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais" class="square"></a>            
             
             <div class='media-text'>
                 <p>{{$boke->content}}</p>
@@ -62,6 +62,7 @@ form{
 .nickname {
     font-size:50px;
     float:left;
+    color:white;
 }
 
 .media{
