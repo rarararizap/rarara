@@ -7,7 +7,7 @@
                 {!! Form::close() !!}
             @else
                 {!! Form::open(['route' =>[ 'user.favorite',$boke->id]]) !!}
-                    {{Form::button('<span class="glyphicon glyphicon-heart color-mintgreen" style="font-size:30px;"></span>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
+                    {{Form::button('<span class="glyphicon glyphicon-heart color-mintgreen" style="font-size:30px;"></span>', array('type' => 'submit hidden', 'class' => 'btn btn-normal'))}}
                 {!! Form::close() !!}
             @endif
     @endif
