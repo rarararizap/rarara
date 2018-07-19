@@ -19,7 +19,9 @@
                 <p>{{$boke->content}}</p>
             </div>
             
+            
             <div class='link-text'>
+                
                 {!! link_to_route('bokes.create', 'ボケる',['id' => $boke->odai_id] , ['class' => 'btn-radius']) !!}
             
 
@@ -27,7 +29,7 @@
                 
                  @if (Auth::user()->id == $boke->user_id)
                     {!! Form::open(['route' => ['bokes.destroy', $boke->id], 'method' => 'delete']) !!}
-                        {{Form::button('<i class="glyphicon glyphicon-trash "></i>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
+                        {{Form::button('<span class="glyphicon glyphicon-trash "　style="font-size:30px;"></span>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
                     {!! Form::close() !!}
                  @endif
             </div>
@@ -82,6 +84,8 @@ form{
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     
 }
+
+
 
 </style>
 
