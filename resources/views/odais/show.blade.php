@@ -6,7 +6,7 @@
     
     <img class="odai_show" src="{{ url($odai->filename) }}" alt="odai1">
     <div class="boke_button">
-     {!! link_to_route('bokes.create', 'ボケる',$odai->id) !!}
+     {!! link_to_route('bokes.create', 'ボケる',$odai->id,['class' => 'btn-radius']) !!}
     </div>            
 
    <ul class="media-list">
@@ -24,11 +24,7 @@
             <div>
                 <p>{{$boke->content}}とぼけた。</p>
             </div>
-            
-            <div>
-                {!! link_to_route('bokes.create', 'ボケて',['id' => $boke->odai_id]) !!}
-            </div>
-
+           
                 @include('bokes.favo_button', ['boke' => $boke])
             
         </div>
@@ -40,3 +36,24 @@
 @endsection
 
 
+<style type="text/css">
+
+.btn-radius{
+    width:40px;
+    height:10px;
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 3px #f55555;
+    color: white;
+}
+
+
+
+.btn-radius:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+</style>
