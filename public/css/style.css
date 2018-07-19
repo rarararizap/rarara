@@ -6,6 +6,22 @@ body {
 
 }
 
+a{
+    color:white;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#f55555;
+    text-decoration:none;
+}
+
+a:active{
+    color:#f55555;
+}
+
+
+
 .navbar{
    color: black;
    background: #00CC9F;
@@ -77,8 +93,24 @@ h2{
     text-align: center;
     color:#F55555;
     margin-right: 40px;
+    text-decoration: none;
     
 }
+
+.salmonpink{
+    color:#F55555;
+}
+
+.salmonpink:hover{
+    color:#F55555;
+    text-decoration:none;
+}
+
+.salmonpink:active{
+    color:#F55555;
+}
+
+
 
 
 .wf-nicomoji { font-family: "Nico Moji"; }
