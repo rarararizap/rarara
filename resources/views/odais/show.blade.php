@@ -1,42 +1,59 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="outer">
+    <div class="inner">    
+        <h1>みんなのボケ</h1>
+        
+        <img class="odai_show" src="{{ url($odai->filename) }}" alt="odai1">
+        <div class="boke_button">
+         {!! link_to_route('bokes.create', 'ボケる',$odai->id,['class' => 'btn-radius']) !!}
+        </div>            
     
-    <h1>みんなのボケ</h1>
-    
-    <img class="odai_show" src="{{ url($odai->filename) }}" alt="odai1">
-    <div class="boke_button">
-     {!! link_to_route('bokes.create', 'ボケる',$odai->id,['class' => 'btn-radius']) !!}
-    </div>            
-
-   <ul class="media-list">
-@foreach ($bokes as $boke)
-
-
-    <li class="media">
-        <div class="media-left">
-            <img class="media-object img-rounded" src="{{ Gravatar::src($boke->nickname, 50) }}" alt="">
-        </div>
-        <div class="media-body">
-            <div>
-                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} <span class="text-muted">posted at {{ $boke->created_at }}</span>
-            </div>
-            <div>
-                <p>{{$boke->content}}とぼけた。</p>
-            </div>
-           
-                @include('bokes.favo_button', ['boke' => $boke])
+        <ul class="media-list">
+            @foreach ($bokes as $boke)
             
-        </div>
-    </li>
-@endforeach
-</ul>
-    
+            
+                <li class="media">
+                    <div class="media-left">
+                        <img class="media-object img-rounded" src="{{ Gravatar::src($boke->nickname, 50) }}" alt="">
+                    </div>
+                    <div class="media-body">
+                        <div>
+                            {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} <span class="text-muted">posted at {{ $boke->created_at }}</span>
+                        </div>
+                        <div>
+                            <p>{{$boke->content}}とぼけた。</p>
+                        </div>
+                       
+                            @include('bokes.favo_button', ['boke' => $boke])
+                        
+                    </div>
+                </li>
+            @endforeach
+        </ul>
+    </div>
+    </div>
+        
    {!! $bokes->render() !!}
 @endsection
 
 
 <style type="text/css">
+
+.outer{
+  position: relative;
+}
+.inner{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 50%;
+  height: 3.2rem;
+}
 
 .btn-radius{
     width:40px;
