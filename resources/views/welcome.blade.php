@@ -4,7 +4,13 @@
 <div class="box">
     <div class="contents">
         <div class="contents_inner">
-            <h1 class='wf-nicomoji'>Welcome to the ServiceName</h1>
+            
+            <h1 class='wf-nicomoji'>ようこそ ラララジョークへ</h1>
+            
+            <h4>このサービスは、匿名の大喜利サービスです。</p>
+            <h4>見るだけでもよし、ボケてもよし</h4>
+            <h4>みなさんを笑顔にします</h4>
+            <h4>どうぞごゆっくり</h4>
             
             <a href="login">
               <button type="button" class="btn-circle btn-xl wf-nicomoji">ログイン</button>
@@ -53,7 +59,7 @@ body:before {
   max-width: 640px;
   height: 100%;
   margin: auto;
-  padding: 225px 10px ;
+  padding: 100px 10px ;
   color: #fff;
   text-align: center;
 }
