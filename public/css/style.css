@@ -22,6 +22,7 @@ footer{
     padding: 0;
     text-align: center;
     color: Grey;
+
 }
 
 .odais{
@@ -40,9 +41,6 @@ footer{
     height:400px;
     
 }
-
-.wf-nicomoji 
-{ font-family: "Nico Moji"; }
 
 .sidenav {
     width: 250px;
@@ -81,3 +79,7 @@ h2{
     margin-right: 40px;
     
 }
+
+
+.wf-nicomoji { font-family: "Nico Moji"; }
+
