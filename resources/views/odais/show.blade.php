@@ -41,18 +41,10 @@
 
 <style type="text/css">
 
-.outer{
-  position: relative;
-}
 .inner{
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width: 50%;
-  height: 3.2rem;
+  width: 60%;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 .btn-radius{
