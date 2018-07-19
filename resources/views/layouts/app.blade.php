@@ -16,7 +16,11 @@
         
         
     </head>
+    <header>
+        <h2>Service Name</h2>
+    </header>
     <body>
+        
         @include('commons.navbar')
 
         <div class="container">
