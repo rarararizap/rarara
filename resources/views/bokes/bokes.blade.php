@@ -3,34 +3,23 @@
 <ul class="media-list">
 @foreach ($bokes as $boke)
 
-    <li class="media">
-        <!--<div class="media-left">-->
-            
-        <!--</div>-->
+    <li class="media-middle">
+        
         <div class="media-body">
-            <div>
                 <img class="media-object img-rounded" src="{{ Gravatar::src($boke->nickname, 50) }}" alt="">
-            </div>
-            <div class='nickname'>
-                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} 
-            </div>
+            <p class='nickname'>
+                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} さん
+            </p>
                 <p><img src="{{ url($boke->filename) }}" alt="odais"  class='square'></p>
             <div class="media-text">
                 <p>{{$boke->content}}</p>
             </div>
             
-
-
-        
             <div class='link-text'>
                 
                 {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
 
-               
-                
-                
-
-                    @include('bokes.favo_button', ['boke' => $boke])
+              @include('bokes.favo_button', ['boke' => $boke])
             </div>
 
 
@@ -43,17 +32,25 @@
 
 
 <style tipe='text/css'>
-.container { 
-    text-align:center;
+
+.media-middle{
+    border:10px dotted white;
+    border-radius: 30px;
+    margin:100px 150px;
 }
+
+
+.media-body{
+    text-align: center;
+}
+
 
 .media-text p {
     font-size:50px;
 }
 
 .nickname {
-    font-size:50px;
-    float:left;
+    font-size:30px;
 }
 
 .btn-radius{
@@ -66,15 +63,12 @@
 }
 
 
-.media{
-    border:10px dotted white;
-    border-radius: 30px;
-}
-
-
 
 .btn-radius:hover {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     
 }
 
+.link-text{
+    font-size: 30px;
+}
