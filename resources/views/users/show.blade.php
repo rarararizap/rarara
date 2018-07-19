@@ -29,8 +29,13 @@
 
 <style>
 
-li {
+.col-xs-12 li {
     font-size:40px;
 }
+
+span{
+    font-size:40px;
+}
+
 
 </style>

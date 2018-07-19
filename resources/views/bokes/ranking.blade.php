@@ -37,3 +37,8 @@
 .media-text p {
     font-size:100px;
 }
+
+.media{
+    border:10px dotted white;
+    border-radius: 30px;
+}
