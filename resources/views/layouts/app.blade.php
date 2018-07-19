@@ -31,10 +31,10 @@
 
             @yield('content')
         </div>
+        
+        @include('commons.footer')
     </body>
     
-    <footer>
-    Copyright (c) 2018 Servicename
-    </footer>
+
 </html>
 
