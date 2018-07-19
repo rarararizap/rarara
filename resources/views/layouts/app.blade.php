@@ -18,7 +18,9 @@
         
     </head>
     <header>
-        <h2>Service Name</h2>
+        <div class='wf-nicomoji'>
+            <h2>Service Name</h2>
+        </div>
     </header>
     <body>
         
