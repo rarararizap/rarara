@@ -28,7 +28,7 @@
     <div class="contents">
         <div class="contents_inner">
             
-            <h1 class='wf-nicomoji'>ようこそ ラララジョークへ</h1>
+            <h1 class="wf-nicomoji">ようこそ ラララジョークへ</h1>
             
             <h4>このサービスは、匿名の大喜利サービスです。</p>
             <h4>見るだけでもよし、ボケてもよし</h4>
