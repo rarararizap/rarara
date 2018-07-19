@@ -35,6 +35,11 @@ footer{
    height:650px;
 }
 
+.square{
+    width:400px;
+    height:400px;
+    
+}
 
 .wf-nicomoji 
 { font-family: "Nico Moji"; }

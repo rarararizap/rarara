@@ -14,7 +14,7 @@
             <div class='nickname'>
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} 
             </div>
-                <p><img src="{{ url($boke->filename) }}" alt="odais"></p>
+                <p><img src="{{ url($boke->filename) }}" alt="odais"  class='square'></p>
             <div class="media-text">
                 <p>{{$boke->content}}</p>
             </div>
