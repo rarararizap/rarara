@@ -10,7 +10,6 @@
                     {{Form::button('<span class="glyphicon glyphicon-heart color-mintgreen" style="font-size:25px;"></span>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
                 {!! Form::close() !!}
             @endif
-    @endif
     
    <style>
      

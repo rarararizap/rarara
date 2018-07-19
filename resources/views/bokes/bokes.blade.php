@@ -10,7 +10,7 @@
             <p class='nickname'>
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} さん
             </p>
-                <p><img src="{{ url($boke->filename) }}" alt="odais"  class='square'></p>
+                <a href="odais/{{$boke->odai_id}}"><img class="odais square" src="{{ $boke->filename }}" alt="odais"></a>
             <div class="media-text">
                 <p>{{$boke->content}}</p>
             </div>
