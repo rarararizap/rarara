@@ -41,9 +41,6 @@ footer{
     
 }
 
-.wf-nicomoji 
-{ font-family: "Nico Moji"; }
-
 .sidenav {
     width: 250px;
     height: 380px;
@@ -82,3 +79,7 @@ h2{
     margin-right: 40px;
     
 }
+
+
+.wf-nicomoji { font-family: "Nico Moji"; }
+

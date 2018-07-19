@@ -10,6 +10,7 @@
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
@@ -27,7 +28,7 @@
     <div class="contents">
         <div class="contents_inner">
             
-            <h1 class='wf-nicomoji'>ようこそ ラララジョークへ</h1>
+            <h1 class="wf-nicomoji">ようこそ ラララジョークへ</h1>
             
             <h4>このサービスは、匿名の大喜利サービスです。</p>
             <h4>見るだけでもよし、ボケてもよし</h4>
