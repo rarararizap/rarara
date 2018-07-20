@@ -22,11 +22,12 @@ class OdaiController extends Controller
     
     public function show($id){
         
-    
+        $user = \Auth::user();
         $odai = Odai::find($id);
         $bokes = $odai->bokes()->paginate(10);
         
          $data = [
+            'user' => $user,
             'odai' => $odai,
             'bokes' => $bokes,
         ];

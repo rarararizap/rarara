@@ -6,11 +6,11 @@
     <li class="media-middle col-xs-5 col-xs-offset-1">
         
         <div class="media-body">
-                
+
             <p class='nickname'>
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} さん
             </p>
-                <a href="odais/{{$boke->odai_id}}"><img class="odais square" src="{{ $boke->filename }}" alt="odais"></a>
+                <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img class="odais square" src="{{url( $boke->filename) }}" alt="odais"></a>
             <div class="media-text">
                 <p>{{$boke->content}}</p>
             </div>
@@ -18,8 +18,9 @@
             <div class='link-text'>
                 
                 {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
-
+            @if (Auth::user()->id != $boke->user_id)
               @include('bokes.favo_button', ['boke' => $boke])
+            @endif
             </div>
 
 
@@ -74,6 +75,7 @@
 .link-text{
     font-size: 30px;
 }
+
 
 .container { 
     text-align:center;
