@@ -1,7 +1,7 @@
 <ul class="media-list">
 @foreach ($bokes as $boke)
     <li class="media">
-        <div class="container text-center ">
+        <div class="container">
             <div class="media-body">
                 <div>
                     {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
@@ -30,9 +30,16 @@
 
 
 <style tipe='text/css'>
-.container { 
+.container{ 
     text-align:center;
+    background:rgba(255,255,255,0.8);
+    border-radius: 50px;
+    font-size:20px;
 }
+
+/*.b{*/
+/*    margin-top:50px;*/
+/*}*/
 
 .media-text p {
     font-size:100px;
@@ -42,3 +49,6 @@
     border:10px dotted white;
     border-radius: 30px;
 }
+
+
+</style>
