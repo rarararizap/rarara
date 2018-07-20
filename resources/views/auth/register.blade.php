@@ -5,10 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>ServiceName</title>
+        <title>KillingJoke</title>
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
@@ -20,27 +21,31 @@
 
     <div class=circle>
         <div class="text-center">
-            <h1>Sign up</h1>
+            <h1 class="wf-nicomoji">とうろく</h1>
         </div>
     
         <div class="row">
-            <div class="col-2 col-offset-4">
+            <div>
     
                 {!! Form::open(['route' => 'signup.post']) !!}
     
                     <div class="form-group">
-                        {!! Form::label('nickname', 'Nickname') !!}
+                        {!! Form::label('nickname', 'ニックネーム') !!}
                         {!! Form::text('nickname',null, ['class' => 'form-control']) !!}
-    
-                        {!! Form::label('password', 'Password') !!}
+                    <br>
+                        {!! Form::label('password', 'パスワード') !!}
                         {!! Form::password('password', ['class' => 'form-control']) !!}
-    
-                        {!! Form::label('password_confirmation', 'Confirmation') !!}
+                    <br>
+                        {!! Form::label('password_confirmation', 'パスワード確認') !!}
                         {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                     </div>
     
                     {!! Form::submit('登録', ['class' => 'btn btn-primary btn-block']) !!}
                 {!! Form::close() !!}
+                    
+                    <br>
+                    
+                <p>　{!! link_to_route('login', 'ログインはこちら','',['class'=>'text']) !!}</p>
             </div>
         </div>
     </div>
@@ -68,20 +73,45 @@
   margin: auto;
 }
 
-/*.row{*/
-/*    position: relative;*/
-/*    left: 190px;*/
-/*    width: 200px;*/
-/*    height: 10px;*/
-/*    -webkit-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);*/
-/*    -moz-box-shadow: 0px 1px rgba(255, 255, 255, 0.5);*/
-/*    box-shadow: 0px 1px rgba(255, 255, 255, 0.5);*/
-/*    -webkit-border-radius: 10px;*/
-/*    -moz-border-radius: 10px;*/
-/*    border-radius: 10px;*/
-   
-/*}*/
+.row{
+    font-family:'meiryo';
+    font-weight: bold;
+    border-radius:40px;
+    width:60%;
+    height:30px;
+    margin: 0 auto;
+    max-width: 500px;
+}
 
+
+body{
+    color:#858585;
+}
+
+.form-control{
+    border-radius:40px;
+   
+
+}
+
+.btn-block{
+    font-family:'メイリオ';
+    font-weight: bold;
+    background-color:#f55555;
+    border:none;
+    border-radius:40px;
+    width: 30%;
+    margin: auto;
+    height: 40px;
+}
+
+.btn-block:hover{
+    background-color:#f55555;
+}
+
+.text{
+    color:#858585;
+}
 
 
 </style>

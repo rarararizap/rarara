@@ -29,7 +29,7 @@
                 
                  @if (Auth::user()->id == $boke->user_id)
                     {!! Form::open(['route' => ['bokes.destroy', $boke->id], 'method' => 'delete']) !!}
-                        {{Form::button('<span class="glyphicon glyphicon-trash "　style="font-size:30px;"></span>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
+                        {{Form::button('<span class="glyphicon glyphicon-trash "></span>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
                     {!! Form::close() !!}
                  @endif
             </div>
@@ -46,6 +46,7 @@
     
 .glyphicon{
         color: #00cc9f;
+        font-size:25px;
     }
     
 form{
@@ -84,6 +85,13 @@ form{
 .btn-radius:hover {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     
+}
+
+.btn {
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    padding-left:6px;
 }
 
 
