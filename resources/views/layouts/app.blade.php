@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>ServiceName</title>
+        <title>KillingJoke</title>
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,9 +18,9 @@
         
     </head>
     <header>
-        <div class='wf-nicomoji'>
-            <h2>Service Name</h2>
-        </div>
+        <h2>
+        {!! link_to_route('boke.index', 'KillingJoke',[],['class' => 'wf-nicomoji salmonpink']) !!}
+        </h2>
     </header>
     <body>
         
@@ -28,7 +28,7 @@
 
         <div class="container">
             @include('commons.error_messages')
-
+            @include('commons.topbutton')
             @yield('content')
         </div>
         

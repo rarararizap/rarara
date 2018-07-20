@@ -6,6 +6,22 @@ body {
 
 }
 
+a{
+    color:white;
+    text-decoration:none;
+}
+
+a:hover{
+    color:#f55555;
+    text-decoration:none;
+}
+
+a:active{
+    color:#f55555;
+}
+
+
+
 .navbar{
    color: black;
    background: #00CC9F;
@@ -32,8 +48,8 @@ footer{
 
 
 .odai_show{
-   width:800px;
-   height:650px;
+   width:600px;
+   height:600px;
 }
 
 .square{
@@ -77,9 +93,54 @@ h2{
     text-align: center;
     color:#F55555;
     margin-right: 40px;
+    text-decoration: none;
     
 }
+
+.salmonpink{
+    color:#F55555;
+}
+
+.salmonpink:hover{
+    color:#F55555;
+    text-decoration:none;
+}
+
+.salmonpink:active{
+    color:#F55555;
+}
+
+
 
 
 .wf-nicomoji { font-family: "Nico Moji"; }
 
+.navbar {
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: rgba(255,255,255,0.8);
+    overflow-x: hidden;
+    padding: 8px 0;
+    list-style:none;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    border-radius: 50px;
+    
+}
+
+.navbar a {
+    padding-left: 70px;
+    text-decoration:none;
+    font-size: 30px;
+    color: #2196F3;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+    float: left;
+}
+
+.navbar a:hover {
+    color: #064579;
+}
