@@ -13,6 +13,6 @@ class Odai extends Model
     {
         return $this->hasMany(Boke::class)
                 ->join('users', 'bokes.user_id', '=', 'users.id')
-                ->select('bokes.*','users.id','users.nickname');
+                ->select('bokes.*','users.nickname');
     }
 }
