@@ -40,7 +40,7 @@
 
 
 
-<style>
+<style type='text/css'>
     
 .glyphicon{
         color: #00cc9f;
