@@ -25,9 +25,9 @@
                         <div>
                             <p>{{$boke->content}}とぼけた。</p>
                         </div>
-                       
-                            @include('bokes.favo_button', ['boke' => $boke])
-                        
+                        @if (Auth::user()->id != $boke->user_id)
+                          @include('bokes.favo_button', ['boke' => $boke])
+                        @endif
                     </div>
                 </li>
             @endforeach
