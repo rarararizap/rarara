@@ -3,9 +3,6 @@
 
 
 @section('content')
-<span class="balloon1 wf-nicomoji">
-    <p>ランキング</p>
-</span>
 
 <div>
            <ul class="nav nav-tabs nav-justified wf-nicomoji">

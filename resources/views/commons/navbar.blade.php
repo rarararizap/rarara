@@ -4,7 +4,7 @@
         <div class="box">
         <li>{!! link_to_route('users.show', 'マイページ', ['id' => Auth::id()]) !!}</li>
         <li>{!! link_to_route('boke.index', 'タイムライン', ['id' => Auth::id()]) !!}</li>
-        <li>{!! link_to_route('ranking.overall', 'にんきとうこう') !!}</li>
+        <li>{!! link_to_route('ranking.overall', 'ランキング') !!}</li>
         <li>{!! link_to_route('odais.index', 'おだい',['id' => Auth::id()]) !!}</li>
         <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>
         </div>
