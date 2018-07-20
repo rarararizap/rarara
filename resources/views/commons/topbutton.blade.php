@@ -11,6 +11,7 @@
         position: fixed;
         bottom: 16px;
         right: 16px;
+        margin-right:100px;
     }
     .pagetop a{
         display: block;

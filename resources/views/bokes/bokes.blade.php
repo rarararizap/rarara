@@ -3,10 +3,10 @@
 <ul class="media-list">
 @foreach ($bokes as $boke)
 
-    <li class="media-middle">
+    <li class="media-middle col-xs-6 col-sm-6  col-md-6 col-lg-6">
         
         <div class="media-body">
-                <img class="media-object img-rounded" src="{{ Gravatar::src($boke->nickname, 50) }}" alt="">
+                
             <p class='nickname'>
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} さん
             </p>
@@ -36,7 +36,8 @@
 .media-middle{
     border:10px dotted white;
     border-radius: 30px;
-    margin:100px 150px;
+    margin: 50px 0px;
+    word-break:break-all;
 }
 
 
@@ -46,11 +47,11 @@
 
 
 .media-text p {
-    font-size:50px;
+    font-size:30px;
 }
 
 .nickname {
-    font-size:30px;
+    font-size:25px;
 }
 
 .btn-radius{
