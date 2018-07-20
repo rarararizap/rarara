@@ -42,7 +42,7 @@
 
 <style type='text/css'>
     
-.glyphicon{
+.glyphicon-trash{
         color: #00cc9f;
         font-size:25px;
     }

@@ -42,12 +42,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('bokes', 'BokeController', ['only' => ['store', 'destroy']]);
 
     Route::get('ranking','RankingController@index')->name('ranking.overall');
-    Route::get('ranking/odai1', 'RankingController@show1')->name('ranking.show1');
-    Route::get('ranking/odai2', 'RankingController@show2')->name('ranking.show2');
-    Route::get('ranking/odai3', 'RankingController@show3')->name('ranking.show3'); 
-    Route::get('ranking/odai4', 'RankingController@show4')->name('ranking.show4');
-    Route::get('ranking/odai5', 'RankingController@show5')->name('ranking.show5');
-    Route::get('ranking/odai6', 'RankingController@show6')->name('ranking.show6');
+    // Route::get('ranking/odai1', 'RankingController@show1')->name('ranking.show1');
+    // Route::get('ranking/odai2', 'RankingController@show2')->name('ranking.show2');
+    // Route::get('ranking/odai3', 'RankingController@show3')->name('ranking.show3'); 
+    // Route::get('ranking/odai4', 'RankingController@show4')->name('ranking.show4');
+    // Route::get('ranking/odai5', 'RankingController@show5')->name('ranking.show5');
+    // Route::get('ranking/odai6', 'RankingController@show6')->name('ranking.show6');
  });
 
  
