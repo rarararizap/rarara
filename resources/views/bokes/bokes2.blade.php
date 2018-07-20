@@ -41,7 +41,7 @@
 
 
 <style type='text/css'>
-    
+
 .glyphicon{
         color: #00cc9f;
         font-size:25px;
