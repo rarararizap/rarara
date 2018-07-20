@@ -3,14 +3,12 @@
 <ul class="media-list">
 @foreach ($bokes as $boke)
 
-    <li class="media">
+    <li class="media-middle col-xs-6 col-sm-6  col-md-6 col-lg-6">
         
         <div class="media-body">
-            <div>
-                <img class="media-object img-rounded" src="{{ Gravatar::src($boke->nickname, 50) }}" alt="">
-            </div>
+            
             <div class='nickname'>
-                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
+                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}さん
             </div>
             
                 <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais" class="square"></a>            
@@ -59,18 +57,17 @@ form{
 }
 
 .media-text p {
-    font-size:100px;
+    font-size:30px;
 }
 
 .nickname {
-    font-size:50px;
-    float:left;
-    color:white;
+    font-size:25px;
 }
 
-.media{
+.media-middle{
     border:10px dotted white;
     border-radius: 30px;
+    word-break:break-all;
 }
 
 .btn-radius{
