@@ -1,6 +1,6 @@
 <p class="pagetop">
     <a href="#" title="ページトップへ戻る">
-        <span class="glyphicon glyphicon-arrow-up" style="font-size:25px;"></span>
+        <span class="glyphicon glyphicon-arrow-up" style="font-size:50px;"></span>
     </a>
 </p>
 
@@ -9,7 +9,7 @@
 <style>
     .pagetop{
         position: fixed;
-        bottom: 16px;
+        bottom: 30px;
         right: 16px;
         margin-right:100px;
     }
@@ -22,6 +22,10 @@
     }
     .pagetop:hover{
         opacity: 0.85;
+    }
+    
+    .glyphicon-arrow-up {
+        color:white;
     }
     
    

@@ -31,13 +31,14 @@
 {!! $bokes->render() !!}
 
 
-<style tipe='text/css'>
+<style type='text/css'>
 
 .media-middle{
     border:10px dotted white;
     border-radius: 30px;
     margin: 50px 0px;
     word-break:break-all;
+   
 }
 
 
@@ -73,3 +74,10 @@
 .link-text{
     font-size: 30px;
 }
+
+.container { 
+    text-align:center;
+}
+
+
+</style>

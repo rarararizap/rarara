@@ -40,7 +40,7 @@
 
 
 
-<style>
+<style type='text/css'>
     
 .glyphicon{
         color: #00cc9f;
@@ -67,6 +67,7 @@ form{
 .media-middle{
     border:10px dotted white;
     border-radius: 30px;
+    margin: 50px 0px;
     word-break:break-all;
 }
 
