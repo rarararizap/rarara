@@ -21,19 +21,6 @@ a:active{
 }
 
 
-
-.navbar{
-   color: black;
-   background: #00CC9F;
-   border-bottom:#00CC9F;
-   margin-bottom:100px;
-   
-}
-
-.navbar a{
-  color:black;
-}
-
 footer{
     margin: 0 auto 20px;
     padding: 0;
@@ -59,35 +46,7 @@ footer{
     
 }
 
-.sidenav {
-    width: 250px;
-    height: 380px;
-    position: fixed;
-    z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: rgba(255,255,255,0.8);
-    overflow-x: hidden;
-    padding: 8px 0;
-    list-style:none;
-    margin-left: 40px;
-    border-radius: 50px;
-}
 
-.sidenav a {
-    padding: 6px 8px 6px 8px;
-    text-decoration:none;
-    font-size: 30px;
-    color: #2196F3;
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    
-}
-
-.sidenav a:hover {
-    color: #064579;
-}
 
 h2{
     font-size:90px;
@@ -111,8 +70,12 @@ h2{
     color:#F55555;
 }
 
+.badge {
+    font-size: 30px;
+}
 
 
+/*navberのcss*/
 
 .wf-nicomoji { font-family: "Nico Moji"; }
 
@@ -124,8 +87,6 @@ h2{
     overflow-x: hidden;
     padding: 8px 0;
     list-style:none;
-    margin-left: 200px;
-    margin-right: 200px;
     margin-top: 50px;
     border-radius: 50px;
     margin-bottom: 60px;
@@ -133,14 +94,14 @@ h2{
 }
 
 .navbar a {
-    padding-left: 70px;
+    padding:0px 64px;
     text-decoration:none;
     font-size: 30px;
     color: #2196F3;
     display: inline-block;
     text-align: center;
-    margin-top: 15px;
     float: left;
+    vertical-align:middle;
 }
 
 .navbar a:hover {
