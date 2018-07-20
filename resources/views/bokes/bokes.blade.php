@@ -3,7 +3,7 @@
 <ul class="media-list">
 @foreach ($bokes as $boke)
 
-    <li class="media-middle col-xs-6 col-sm-6  col-md-6 col-lg-6">
+    <li class="media-middle col-xs-5 col-xs-offset-1">
         
         <div class="media-body">
                 
@@ -35,8 +35,8 @@
 
 .media-middle{
     border:10px dotted white;
-    border-radius: 30px;
-    margin: 50px 0px;
+    border-radius: 20px;
+    margin: 10px 30px 10px 55px;
     word-break:break-all;
 }
 
