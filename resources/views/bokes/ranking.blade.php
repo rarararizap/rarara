@@ -14,7 +14,7 @@
                 </div>
                 
                 <div>
-                    {!! link_to_route('bokes.create', 'ボケて', ['id' => $boke->odai_id]) !!}
+                   {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
                     @if (isset($boke->count))
                       <class="text-leftr">いいね：{{ $boke->count}} 
                     @endif
@@ -32,14 +32,10 @@
 <style tipe='text/css'>
 .container{ 
     text-align:center;
-    background:rgba(255,255,255,0.8);
     border-radius: 50px;
-    font-size:20px;
+    font-size:30px;
 }
 
-/*.b{*/
-/*    margin-top:50px;*/
-/*}*/
 
 .media-text p {
     font-size:100px;
@@ -50,5 +46,28 @@
     border-radius: 30px;
 }
 
+.media:first-child {
+    margin-top:30px;
+}
+
+.btn-radius{
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 3px #f55555;
+    color: white;
+}
+
+
+
+.btn-radius:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+.link-text{
+    font-size: 30px;
+}
 
 </style>

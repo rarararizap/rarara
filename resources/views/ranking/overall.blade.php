@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
+@section('content')
+
 <div class="balloon1 wf-nicomoji">
     <p>ランキング</p>
 </div>
 
-@section('content')
-<div class="bbb">
+<div>
             <ul class="nav nav-tabs nav-justified wf-nicomoji">
                 <li role="presentation" class="{{ Request::is('ranking') ? 'active' : '' }}"><a href="{{ route('ranking.overall')}}">そうごう </a></li>
                 <li role="presentation" class="{{ Request::is('ranking/odai1') ? 'active' : '' }}"><a href="{{ route('ranking.show1')}}">おだい.１</a></li>
@@ -20,11 +21,3 @@
 </div>
 @endsection
 
-<style tipe='text/css'>
-
-
-/*.bbb{*/
-/*    padding-top:50px;*/
-/*}*/
-
-</style>
