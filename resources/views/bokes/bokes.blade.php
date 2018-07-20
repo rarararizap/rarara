@@ -3,14 +3,14 @@
 <ul class="media-list">
 @foreach ($bokes as $boke)
 
-    <li class="media-middle col-xs-6 col-sm-6  col-md-6 col-lg-6">
+    <li class="media-middle col-xs-5 col-xs-offset-1">
         
         <div class="media-body">
-                
+
             <p class='nickname'>
                 {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} さん
             </p>
-                <a href="odais/{{$boke->odai_id}}"><img class="odais square" src="{{ $boke->filename }}" alt="odais"></a>
+                <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img class="odais square" src="{{url( $boke->filename) }}" alt="odais"></a>
             <div class="media-text">
                 <p>{{$boke->content}}</p>
             </div>
@@ -18,8 +18,9 @@
             <div class='link-text'>
                 
                 {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
-
+            @if (Auth::user()->id != $boke->user_id)
               @include('bokes.favo_button', ['boke' => $boke])
+            @endif
             </div>
 
 
@@ -31,14 +32,14 @@
 {!! $bokes->render() !!}
 
 
-<style tipe='text/css'>
+<style type='text/css'>
 
 .media-middle{
     border:10px dotted white;
-    border-radius: 30px;
-    margin: 50px 0px;
+    border-radius: 20px;
+    margin: 10px 30px 10px 55px;
     word-break:break-all;
-    
+
 }
 
 
@@ -74,3 +75,11 @@
 .link-text{
     font-size: 30px;
 }
+
+
+.container { 
+    text-align:center;
+}
+
+
+</style>

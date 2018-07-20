@@ -31,8 +31,8 @@
             <h1 class="wf-nicomoji">ようこそ KillingJokeへ</h1>
             
             <h4>このサービスは、匿名の大喜利サービスです。</p>
-            <h4>見るだけでもよし、ボケてもよし</h4>
-            <h4>みなさんを笑顔にします</h4>
+            <h4>見るだけでもよし、ボケてもよし。</h4>
+            <h4>みなさんを笑顔にします😄</h4>
             <h4>どうぞごゆっくり</h4>
             
             <a href="login">
@@ -113,6 +113,9 @@ body:before {
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
+h1{
+    font-size:55px;
+}
 
 
 </style>

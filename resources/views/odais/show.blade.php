@@ -23,9 +23,9 @@
                         <div class="media-text">
                             <p>{{$boke->content}}</p>
                         </div>
-                       
-                            @include('bokes.favo_button', ['boke' => $boke])
-                        
+                        @if (Auth::user()->id != $boke->user_id)
+                          @include('bokes.favo_button', ['boke' => $boke])
+                        @endif
                     </div>
                     
                     <div class="line">
