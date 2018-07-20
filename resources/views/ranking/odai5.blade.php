@@ -2,10 +2,6 @@
 
 
 @section('content')
-<div class="balloon1 wf-nicomoji">
-    <p>ランキング</p>
-</div>
-
 <div>
            <ul class="nav nav-tabs nav-justified wf-nicomoji">
                 <li role="presentation" class="{{ Request::is('ranking') ? 'active' : '' }}"><a href="{{ route('ranking.overall')}}">そうごう </a></li>
