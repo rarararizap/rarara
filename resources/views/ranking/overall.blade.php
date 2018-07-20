@@ -1,12 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-
-    
     　<span class="wf-nicomoji rankingtop3">とっぷすりー</span>
         @include('bokes.ranking', ['bokes' => $bokes])
-    
-   
 @endsection
 
 
