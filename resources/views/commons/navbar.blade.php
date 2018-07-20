@@ -1,7 +1,7 @@
 <body>
     <div class= "wf-nicomoji">
     <div class="navbar">
-        <div class="container">
+        <div class="box">
         <li>{!! link_to_route('users.show', 'マイページ', ['id' => Auth::id()]) !!}</li>
         <li>{!! link_to_route('boke.index', 'タイムライン', ['id' => Auth::id()]) !!}</li>
         <li>{!! link_to_route('ranking.overall', 'にんきとうこう') !!}</li>
@@ -17,10 +17,3 @@
     
     
 </body>
-
-
-
-
-
-
-
