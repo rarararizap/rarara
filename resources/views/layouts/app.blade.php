@@ -27,11 +27,11 @@
         @include('commons.navbar')
 
         <div class="container">
+            
             @include('commons.error_messages')
-            @include('commons.topbutton')
             @yield('content')
+            @include('commons.topbutton')
         </div>
-        
         @include('commons.footer')
     </body>
     

@@ -3,11 +3,12 @@
 @section('content')
     <div class="outer">
     <div class="inner">    
-        <h1>みんなのボケ</h1>
+        <h1 class="wf-nicomoji">みんなのボケ</h1>
         
         <img class="odai_show" src="{{ url($odai->filename) }}" alt="odai1">
+        
         <div class="boke_button">
-         {!! link_to_route('bokes.create', 'ボケる',$odai->id,['class' => 'btn-radius']) !!}
+         {!! link_to_route('bokes.create', '　ボケる　',$odai->id,['class' => 'btn-radius']) !!}
         </div>            
     
         <ul class="media-list">
@@ -15,21 +16,24 @@
             
             
                 <li class="media">
-                    <div class="media-left">
-                        <img class="media-object img-rounded" src="{{ Gravatar::src($boke->nickname, 50) }}" alt="">
-                    </div>
                     <div class="media-body">
-                        <div>
-                            {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} <span class="text-muted">posted at {{ $boke->created_at }}</span>
+                        <div class="nickname">
+                            {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}さん
                         </div>
-                        <div>
-                            <p>{{$boke->content}}とぼけた。</p>
+                        <div class="media-text">
+                            <p>{{$boke->content}}</p>
                         </div>
                         @if (Auth::user()->id != $boke->user_id)
                           @include('bokes.favo_button', ['boke' => $boke])
                         @endif
                     </div>
+                    
+                    <div class="line">
+                    </div>
+                
                 </li>
+                
+                
             @endforeach
         </ul>
     </div>
@@ -54,8 +58,9 @@
     border-color: #F55555;
     border-radius: 25px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border: solid 3px #f55555;
+    border: solid 10px #f55555;
     color: white;
+    font-size:30px;
 }
 
 
@@ -65,4 +70,24 @@
     
 }
 
+.nickname {
+    font-size:30px;
+}
+
+.media-text{
+    font-size:50px;
+}
+
+.line{
+    border-bottom:dashed 5px white;
+    
+}
+
+.link-text{
+    font-size: 30px;
+}
+
+.media-list{
+    margin-top:30px;
+}
 </style>

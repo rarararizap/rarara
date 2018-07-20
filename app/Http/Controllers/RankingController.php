@@ -23,7 +23,7 @@ class RankingController extends Controller
         ->select('bokes.*', 'users.nickname', 'odais.filename', \DB::raw('COUNT(*) as count'))
         ->groupBy('bokes.id', 'bokes.content', 'odais.filename', 'bokes.user_id', 'bokes.odai_id','bokes.created_at', 'bokes.updated_at', 'users.nickname')
         ->orderBy('count', 'DESC')
-        ->take(10)
+        ->take(3)
         ->get();
 
         return view('ranking.overall', [
@@ -41,7 +41,7 @@ class RankingController extends Controller
         ->where('odai_id', '1')
         ->groupBy('bokes.id', 'bokes.content', 'odais.filename', 'bokes.user_id', 'bokes.odai_id','bokes.created_at', 'bokes.updated_at', 'users.nickname')
         ->orderBy('count', 'DESC')
-        ->take(10)
+        ->take(1)
         ->get();
     
     
@@ -77,7 +77,7 @@ class RankingController extends Controller
         ->where('odai_id', '3')
         ->groupBy('bokes.id', 'bokes.content', 'odais.filename', 'bokes.user_id', 'bokes.odai_id','bokes.created_at', 'bokes.updated_at', 'users.nickname')
         ->orderBy('count', 'DESC')
-        ->take(10)
+        ->take(1)
         ->get();
     
         
@@ -94,7 +94,7 @@ class RankingController extends Controller
         ->where('odai_id', '4')
         ->groupBy('bokes.id', 'bokes.content', 'odais.filename', 'bokes.user_id', 'bokes.odai_id','bokes.created_at', 'bokes.updated_at', 'users.nickname')
         ->orderBy('count', 'DESC')
-        ->take(10)
+        ->take(1)
         ->get();
     
         
@@ -111,7 +111,7 @@ class RankingController extends Controller
         ->where('odai_id', '5')
         ->groupBy('bokes.id', 'bokes.content', 'odais.filename', 'bokes.user_id', 'bokes.odai_id','bokes.created_at', 'bokes.updated_at', 'users.nickname')
         ->orderBy('count', 'DESC')
-        ->take(10)
+        ->take(1)
         ->get();
     
         
@@ -128,7 +128,7 @@ class RankingController extends Controller
         ->where('odai_id', '6')
         ->groupBy('bokes.id', 'bokes.content', 'odais.filename', 'bokes.user_id', 'bokes.odai_id','bokes.created_at', 'bokes.updated_at', 'users.nickname')
         ->orderBy('count', 'DESC')
-        ->take(10)
+        ->take(1)
         ->get();
     
         
