@@ -20,6 +20,7 @@
     list-style: none;
     float:left;
     margin:0 0px 50px;
+    color: white;
 }
 
 .btn-radius{
@@ -37,5 +38,6 @@
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     
 }
+
 
 </style>
