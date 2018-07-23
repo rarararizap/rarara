@@ -78,7 +78,9 @@ h2{
 
 /*navberのcss*/
 
-.wf-nicomoji { font-family: "Nico Moji"; }
+.wf-nicomoji { 
+    font-family: "Nico Moji";
+    }
 
 .navbar {
     z-index: 1;
