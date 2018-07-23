@@ -1,33 +1,35 @@
 
+<div class="row">
 
-<ul class="media-list">
-@foreach ($bokes as $boke)
-
-    <li class="media-middle col-xs-5 col-xs-offset-1">
-        
-        <div class="media-body">
-
-            <p class='nickname'>
-                {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} さん
-            </p>
-                <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img class="odais square" src="{{url( $boke->filename) }}" alt="odais"></a>
-            <div class="media-text">
-                <p>{{$boke->content}}</p>
-            </div>
+    <ul class="media-list">
+    @foreach ($bokes as $boke)
+    
+        <li class="media-middle col-xs-5 col-xs-offset-1">
             
-            <div class='link-text'>
+            <div class="media-body">
+    
+                <p class='nickname'>
+                    {!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!} さん
+                </p>
+                    <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img class="odais square" src="{{url( $boke->filename) }}" alt="odais"></a>
+                <div class="media-text">
+                    <p>{{$boke->content}}</p>
                 
-                {!! link_to_route('bokes.create', 'ボケる',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
-            @if (Auth::user()->id != $boke->user_id)
-              @include('bokes.favo_button', ['boke' => $boke])
-            @endif
+                    <div class='link-text'>
+                    
+                        {!! link_to_route('bokes.create', 'ボケる',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
+                        @if (Auth::user()->id != $boke->user_id)
+                          @include('bokes.favo_button', ['boke' => $boke])
+                        @endif
+                    </div>
+                </div>
+    
             </div>
+        </li>
+    @endforeach
+    </ul>
+</div>
 
-
-        </div>
-    </li>
-@endforeach
-</ul>
 
 {!! $bokes->render() !!}
 
@@ -37,22 +39,18 @@
 .media-middle{
     border:10px dotted white;
     border-radius: 20px;
-    margin: 10px 30px 10px 55px;
+    margin: 10px 30px 30px 55px;
     padding-bottom:20px;
-    
     word-break:break-all;
     padding-bottom:20px;
+    height:680px;
 
-}
-
-
-.media-body{
-    text-align: center;
 }
 
 
 .media-text p {
-    font-size:30px;
+    font-size:26px;
+    font-weight:bold;
 }
 
 .nickname {

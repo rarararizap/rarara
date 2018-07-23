@@ -42,7 +42,7 @@ class BokeController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'content' => 'required|max:191',
+            'content' => 'required|max:48',
         ]);
 
         $request->user()->bokes()->create([
