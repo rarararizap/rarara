@@ -16,6 +16,10 @@
                     {!! Form::submit('送信', ['class' => 'btn-radius']) !!}
                     
                 {!! Form::close() !!}
+                
+                @include('commons.error_messages')
+                
+                
          </div>
     </div>
 @endsection

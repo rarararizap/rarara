@@ -24,34 +24,34 @@
             @include('commons.error_messages')
 
            
-<div class=circle>
-    <div class="text-center">
-        <h1 class="wf-nicomoji">ログイン</h1>
-    </div>
-
-    <div class="row">
-
-        {!! Form::open(['route' => 'login.post']) !!}
-            <div class="form-group">
-                {!! Form::label('nickname', 'ニックネーム') !!}
-                {!! Form::text('nickname', old('nickname'), ['class' => 'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('password', 'パスワード') !!}
-                {!! Form::password('password', ['class' => 'form-control','password']) !!}
-            </div>
+            <div class=circle>
+                <div class="text-center">
+                    <h1 class="wf-nicomoji">ログイン</h1>
+                </div>
             
-            <br>
-
-            {!! Form::submit('ログイン', ['class' => 'btn btn-primary btn-block']) !!}
-        {!! Form::close() !!}
-
+                <div class="row">
             
-        <p>　{!! link_to_route('signup.get', '登録はこちら','',['class'=>'text']) !!}</p>
-    
-    </div>
-</div>
+                    {!! Form::open(['route' => 'login.post']) !!}
+                        <div class="form-group">
+                            {!! Form::label('nickname', 'ニックネーム') !!}
+                            {!! Form::text('nickname', old('nickname'), ['class' => 'form-control']) !!}
+                        </div>
+            
+                        <div class="form-group">
+                            {!! Form::label('password', 'パスワード') !!}
+                            {!! Form::password('password', ['class' => 'form-control','password']) !!}
+                        </div>
+                        
+                        <br>
+            
+                        {!! Form::submit('ログイン', ['class' => 'btn btn-primary btn-block']) !!}
+                    {!! Form::close() !!}
+            
+                        
+                    <p>　{!! link_to_route('signup.get', '登録はこちら','',['class'=>'text']) !!}</p>
+                
+                </div>
+            </div>
 
 
         </div>
