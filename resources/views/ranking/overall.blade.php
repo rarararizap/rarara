@@ -5,9 +5,12 @@
         @include('bokes.ranking', ['bokes' => $bokes])
       <div class="mosaic">
         <img src="mosaicboke.jpg">
+
+
         <div class="cp_btn wf-nicomoji" id="kakin-show">
             <p>つづきはこちら</p>
         </div>
+
       </div>
       
  <div class="kakin-modal-wrapper" id="kakin-modal">
@@ -22,7 +25,8 @@
     </div>
  </div>
 </div>
-    
+y
+
 @endsection
 
 
@@ -91,7 +95,10 @@
         padding-top:10px;
     }
     
- #kakin-modal-wrapper {
+
+ .kakin-modal-wrapper {
+ 
+
   position: fixed;
   top: 0;
   right: 0;
@@ -99,8 +106,9 @@
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 100;
-  display: none;
-}
+  display:none;
+ }
+
 
 .modal {
   position: absolute;
@@ -149,13 +157,14 @@
 
 <script>
 $(function(){
-    $('#kakin-show').click(function(){
-        $('#kakin-modal').fadeIn();
+    $(".cp_btn").click(function(){
+        $(".modal").fadeIn();
     });
     
-    $('.close-modal').click(function(){
-    $('#kakin-modal').fadeOut();
+  
+  $(".cp_btn").hover(function(){
+    $(this).css("cursor","pointer");
   });
     
  });
- </script>
+</script>

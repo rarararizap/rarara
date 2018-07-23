@@ -1,31 +1,40 @@
-<p class="pagetop">
-    <a href="#" title="ページトップへ戻る">
-        <span class="glyphicon glyphicon-arrow-up" style="font-size:25px;">トップへ</span>
-    </a>
-</p>
 
+   
+        <div class="glyphicon glyphicon-arrow-up top-btn" style="font-size:40px;">トップへ</div>
+ 
 
 
 <style>
-    .pagetop{
-        position: fixed;
+    .top-btn{
         bottom: 16px;
-        right: 16px;
-        margin-right:50px;
-    }
-    .pagetop a{
+        left: 1200px;
         display: block;
         text-decoration: none;
-        -webkit-transition:all 0.3s ;
-    	-moz-transition:all 0.3s ;
-	    transition:all 0.3s ;
+        width: 30px;
+        height: 30px;
     }
-    .pagetop:hover{
-        opacity: 0.85;
+    
+    .top-btn:hover{
+        opacity: 0.5;
     }
+    
     
    
 </style>
 
 
 
+<script>
+
+    $(function(){
+  
+  $('.top-btn').click(function(){
+    $('html, body').animate({'scrollTop':0},500);
+  });
+  
+  $('.top-btn').hover(function(){
+    $(this).css("cursor","pointer");
+  });
+});
+    
+</script>
