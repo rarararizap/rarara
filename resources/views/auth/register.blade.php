@@ -17,38 +17,43 @@
         
         
     </head>
+    <body>
+        <div class="container">
+            @include('commons.error_messages')
 
-
-    <div class=circle>
-        <div class="text-center">
-            <h1 class="wf-nicomoji">とうろく</h1>
-        </div>
-    
-        <div class="row">
-            <div>
-    
-                {!! Form::open(['route' => 'signup.post']) !!}
-    
-                    <div class="form-group">
-                        {!! Form::label('nickname', 'ニックネーム') !!}
-                        {!! Form::text('nickname',null, ['class' => 'form-control']) !!}
-                    <br>
-                        {!! Form::label('password', 'パスワード') !!}
-                        {!! Form::password('password', ['class' => 'form-control']) !!}
-                    <br>
-                        {!! Form::label('password_confirmation', 'パスワード確認') !!}
-                        {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
+            <div class=circle>
+                <div class="text-center">
+                    <h1 class="wf-nicomoji">とうろく</h1>
+                </div>
+            
+                <div class="row">
+                    <div>
+            
+                        {!! Form::open(['route' => 'signup.post']) !!}
+            
+                            <div class="form-group">
+                                {!! Form::label('nickname', 'ニックネーム') !!}
+                                {!! Form::text('nickname',null, ['class' => 'form-control']) !!}
+                            <br>
+                                {!! Form::label('password', 'パスワード') !!}
+                                {!! Form::password('password', ['class' => 'form-control']) !!}
+                            <br>
+                                {!! Form::label('password_confirmation', 'パスワード確認') !!}
+                                {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
+                            </div>
+            
+                            {!! Form::submit('登録', ['class' => 'btn btn-primary btn-block']) !!}
+                        {!! Form::close() !!}
+                            
+                            <br>
+                            
+                        <p>　{!! link_to_route('login', 'ログインはこちら','',['class'=>'text']) !!}</p>
                     </div>
-    
-                    {!! Form::submit('登録', ['class' => 'btn btn-primary btn-block']) !!}
-                {!! Form::close() !!}
-                    
-                    <br>
-                    
-                <p>　{!! link_to_route('login', 'ログインはこちら','',['class'=>'text']) !!}</p>
+                </div>
             </div>
         </div>
-    </div>
+    </body>
+</html>
 
 
 <style type="text/css">

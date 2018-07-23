@@ -17,7 +17,7 @@
                 
                     <div class='link-text'>
                     
-                        {!! link_to_route('bokes.create', 'ボケる',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
+                        {!! link_to_route('bokes.create', 'このお題でボケる',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
                         @if (Auth::user()->id != $boke->user_id)
                           @include('bokes.favo_button', ['boke' => $boke])
                         @endif
@@ -68,17 +68,6 @@
 
 .row{
     font-weight:normal;
-}
-
-
-.btn-radius{
-    background-color: #F55555;
-    border-color: #F55555;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border: solid 3px #f55555;
-    color: white;
-    
 }
 
 
