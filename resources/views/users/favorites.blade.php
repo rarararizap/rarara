@@ -47,6 +47,10 @@
 }
 
 .col-xs-12{
-    font-size:25px;
+    font-size:30px;
+}
+
+.nav li{
+    font-weight:bold;
 }
 </style>

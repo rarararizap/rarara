@@ -38,7 +38,8 @@
     border:10px dotted white;
     border-radius: 20px;
     margin: 10px 30px 10px 55px;
-    padding-bottom:10px;
+    padding-bottom:20px;
+    
     word-break:break-all;
 
 }
@@ -70,8 +71,22 @@
     font-weight:normal;
 }
 
-btn-radius{
-    margin-bottom:10px;
+
+.btn-radius{
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 3px #f55555;
+    color: white;
+    
+}
+
+
+
+.btn-radius:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    
 }
 
 </style>
