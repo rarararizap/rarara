@@ -22,15 +22,35 @@
 
 <style>
 
-.col-xs-10 li {
-    font-size:40px;
-    font-weight: bold;
+.inner{
+  width: 60%;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
-.row{
-    font-size:20px;
-    font-weight:bold;
+.nickname {
+    font-size:30px;
 }
 
+.media-text{
+    font-size:50px;
+}
+
+.line{
+    border-bottom:dashed 5px white;
+    
+}
+
+.link-text{
+    font-size: 30px;
+}
+
+.media-list{
+    margin-top:30px;
+}
+
+.col-xs-12{
+    font-size:30px;
+}
 
 </style>

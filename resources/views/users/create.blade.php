@@ -20,18 +20,8 @@
 <style type="text/css">
 
 .btn-radius{
-    background-color: #F55555;
-    border-color: #F55555;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border: solid 3px #f55555;
     margin: 0px 150px;
 
-}
-
-.btn-radius:hover {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-    
 }
 
 .odai_boke{
