@@ -8,7 +8,7 @@
         <img class="odai_show" src="{{ url($odai->filename) }}" alt="odai1">
         
         <div class="boke_button">
-         {!! link_to_route('bokes.create', '　ボケる　',$odai->id,['class' => 'btn-radius']) !!}
+         {!! link_to_route('bokes.create', 'ボケる',$odai->id,['class' => 'btn-radius']) !!}
         </div>            
     
         <ul class="media-list">
@@ -51,25 +51,6 @@
   max-width: 600px;
 }
 
-.btn-radius{
-    width:40px;
-    height:10px;
-    background-color: #F55555;
-    border-color: #F55555;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border: solid 10px #f55555;
-    color: white;
-    font-size:30px;
-}
-
-
-
-.btn-radius:hover {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-    
-}
-
 .nickname {
     font-size:30px;
 }
@@ -90,4 +71,5 @@
 .media-list{
     margin-top:30px;
 }
+
 </style>

@@ -64,25 +64,15 @@ form{
     font-size:25px;
 }
 
+.link-text{
+    font-size: 30px;
+}
+
 .media-middle{
     border:10px dotted white;
     border-radius: 30px;
     margin: 10px 30px 10px 55px;
     word-break:break-all;
-    
-}
-
-.btn-radius{
-    background-color: #F55555;
-    border-color: #F55555;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border: solid 3px #f55555;
-    color: white;
-}
-
-.btn-radius:hover {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -93,6 +83,9 @@ form{
     padding-left:6px;
 }
 
+.row{
+    font-weight:normal;
+}
 
 
 </style>

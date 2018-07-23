@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <ul>
+    <ul class="media-list">
     @foreach ($odais as $odai)
         <li class='col-xm-6 col-xs-6' >
             <h3 class="wf-nicomoji">おだい.{{$odai->id}}<h3>
@@ -23,21 +23,6 @@
     color: white;
 }
 
-.btn-radius{
-    background-color: #F55555;
-    border-color: #F55555;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border: solid 3px #f55555;
-    color: white;
-}
-
-
-
-.btn-radius:hover {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-    
-}
 
 
 </style>
