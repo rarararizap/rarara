@@ -17,7 +17,7 @@
             
             <div class='link-text'>
                 
-                {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
+                {!! link_to_route('bokes.create', 'ボケる',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
             @if (Auth::user()->id != $boke->user_id)
               @include('bokes.favo_button', ['boke' => $boke])
             @endif
@@ -38,7 +38,10 @@
     border:10px dotted white;
     border-radius: 20px;
     margin: 10px 30px 10px 55px;
+    padding-bottom:20px;
+    
     word-break:break-all;
+    padding-bottom:20px;
 
 }
 
@@ -56,22 +59,6 @@
     font-size:25px;
 }
 
-.btn-radius{
-    background-color: #F55555;
-    border-color: #F55555;
-    border-radius: 25px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    border: solid 3px #f55555;
-    color: white;
-}
-
-
-
-.btn-radius:hover {
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
-    
-}
-
 .link-text{
     font-size: 30px;
 }
@@ -81,5 +68,26 @@
     text-align:center;
 }
 
+.row{
+    font-weight:normal;
+}
+
+
+.btn-radius{
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 3px #f55555;
+    color: white;
+    
+}
+
+
+
+.btn-radius:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
 
 </style>

@@ -5,7 +5,12 @@
         @include('bokes.ranking', ['bokes' => $bokes])
       <div class="mosaic">
         <img src="mosaicboke.jpg">
-        <div class="cp_btn wf-nicomoji" id="kakin-show">つづきはこちら </div>
+
+
+        <div class="cp_btn wf-nicomoji" id="kakin-show">
+            <p>つづきはこちら</p>
+        </div>
+
       </div>
       
  <div class="kakin-modal-wrapper" id="kakin-modal">
@@ -20,7 +25,7 @@
     </div>
  </div>
 </div>
-
+y
 
 @endsection
 
@@ -90,7 +95,10 @@
         padding-top:10px;
     }
     
+
  .kakin-modal-wrapper {
+ 
+
   position: fixed;
   top: 0;
   right: 0;
@@ -100,6 +108,7 @@
   z-index: 100;
   display:none;
  }
+
 
 .modal {
   position: absolute;
@@ -144,6 +153,7 @@
   border-radius:50%;
 }
 </style>
+
 
 <script>
 $(function(){
