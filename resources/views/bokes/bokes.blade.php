@@ -39,6 +39,7 @@
     border-radius: 20px;
     margin: 10px 30px 10px 55px;
     word-break:break-all;
+    padding-bottom:20px;
 
 }
 
