@@ -13,6 +13,7 @@
     border-radius:50%;
     width:40px;
     height:40px;
+    margin-left:50px;
     padding-left:6px;
     background:rgba(255,255,255,0.8);
 }
