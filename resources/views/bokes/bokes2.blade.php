@@ -16,7 +16,7 @@
             
                 <div class='link-text'>
                     
-                    {!! link_to_route('bokes.create', 'ボケる',['id' => $boke->odai_id] , ['class' => 'btn-radius']) !!}
+                    {!! link_to_route('bokes.create', 'このお題でボケる',['id' => $boke->odai_id] , ['class' => 'btn-radius']) !!}
                 
                     @if (Auth::user()->id != $boke->user_id)
                         @include('bokes.favo_button', ['boke' => $boke])
