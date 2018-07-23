@@ -1,11 +1,11 @@
 <ul class="media-list">
-@foreach ($bokes as $boke)
+@foreach ($bokes as $key => $boke)
     <li class="media">
         <div class="container">
             <div class="media-body">
-                <div>
-{!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}
-                </div>
+                
+                <div class="junni">No.{{ $key+1 }}:{!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}</div>
+                
                 <div>
                     <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais" class="square"></a>
                 </div>
@@ -71,4 +71,8 @@
     font-size: 30px;
 }
 
+
+.junni {
+    font-size:80px;
+}
 </style>

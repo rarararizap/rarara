@@ -7,15 +7,15 @@
         <img src="mosaicboke.jpg">
 
 
-        <div class="cp_btn wf-nicomoji" id="kakin-show">
-            <p>つづきはこちら</p>
+        <div class="cp_btn wf-nicomoji" id="signup-show" data-open="signup-modal">
+            ４いいこう
         </div>
 
       </div>
       
- <div class="kakin-modal-wrapper" id="kakin-modal">
+ <div class="signup-modal-wrapper" id="signup-modal">
   <div class="modal close-modal">
-    <div id="kakin-form">
+    <div id="signup-form">
         <h2>有料会員登録</h2>
         <form action="#">
           <input class="form-control" type="text" placeholder="登録">
@@ -25,7 +25,7 @@
     </div>
  </div>
 </div>
-y
+
 
 @endsection
 
@@ -62,7 +62,7 @@ y
     
     .cp_btn {
         position: relative;
-        display: block;
+        
         width: 250px;
         vertical-align:middle;
         text-align: center;
@@ -96,7 +96,7 @@ y
     }
     
 
- .kakin-modal-wrapper {
+ .signup-modal-wrapper {
  
 
   position: fixed;
@@ -122,11 +122,11 @@ y
   text-align: center;
 }
 
-#kakin-form {
+#signup-form {
   width: 100%;
 }
 
-#kakin-form h2 {
+#signup-form h2 {
   color: #5f5d60;
   letter-spacing: 1px;
   margin-bottom: 40px;
@@ -155,16 +155,4 @@ y
 </style>
 
 
-<script>
-$(function(){
-    $(".cp_btn").click(function(){
-        $(".modal").fadeIn();
-    });
-    
-  
-  $(".cp_btn").hover(function(){
-    $(this).css("cursor","pointer");
-  });
-    
- });
-</script>
+
