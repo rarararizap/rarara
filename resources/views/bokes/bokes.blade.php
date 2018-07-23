@@ -41,6 +41,7 @@
     padding-bottom:20px;
     
     word-break:break-all;
+    padding-bottom:20px;
 
 }
 
