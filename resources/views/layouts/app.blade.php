@@ -36,3 +36,19 @@
     
 
 </html>
+
+<script>
+    $(function(){
+    $(".cp_btn").click(function(){
+        $(this).text('かきんしてね');
+    });
+    
+  
+  $(".cp_btn").hover(function(){
+    $(".cp_btn").css("cursor","pointer");
+  });
+    
+ });
+ 
+    
+</script>
