@@ -21,7 +21,7 @@
         <div class="container">
             @include('commons.error_messages')
 
-            <div class=circle>
+            <div class="circle">
                 <div class="text-center">
                     <h1 class="wf-nicomoji">とうろく</h1>
                 </div>
@@ -62,8 +62,8 @@
   content: '';
   top: 0;
   left: 0;
-  width: 600px;
-  height: 600px;
+  width: 90vh;
+  height: 90vh;
   background: rgba(255,255,255,0.8);
   border-radius: 50%;
   /*margin: 30px 20px 30px 40px;*/
@@ -71,11 +71,12 @@
   padding-top: 100px;
   
   position: absolute;
-  top: 0px;
+  top: 2.5%;
   right: 0px;
   bottom: 0px;
   left: 0px;
   margin: auto;
+  
 }
 
 .row{
@@ -91,6 +92,10 @@
 
 body{
     color:#858585;
+}
+
+.form-group{
+    
 }
 
 .form-control{
