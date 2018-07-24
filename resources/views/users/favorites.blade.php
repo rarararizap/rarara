@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<span class="wf-nicomoji text">じぶんのボケとおきにいりがみれるよ</span>
     <div class="row">
         
         <div class="col-xs-12">
@@ -52,5 +53,9 @@
 
 .nav li{
     font-weight:bold;
+}
+.text{
+    color: #858585;
+    font-size: 50px;
 }
 </style>
