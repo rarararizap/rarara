@@ -29,7 +29,7 @@
             
             @yield('content')
             @include('commons.topbutton')
-        </div>
+        </div><br>
         @include('commons.footer')
       
     </body>
