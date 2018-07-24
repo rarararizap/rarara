@@ -1,3 +1,4 @@
+    いいね
             @if (Auth::user()-> is_favoriting($boke->id))
                 {!! Form::open(['route' =>[ 'user.unfavorite',$boke->id],'method'=>'delete']) !!}
                     {{Form::button('<span class="glyphicon glyphicon-heart color-red" style="font-size:25px;"></span>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
@@ -13,7 +14,6 @@
     border-radius:50%;
     width:40px;
     height:40px;
-    margin-left:50px;
     padding-left:6px;
     background:rgba(255,255,255,0.8);
 }
