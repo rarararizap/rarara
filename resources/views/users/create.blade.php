@@ -3,7 +3,7 @@
 @section('content')
     <div class="outer">
         <div class="inner">
-                    <h3 class="wf-nicomoji">おだい.{{$odai->id}}</h3>
+                    <h1 class="wf-nicomoji">おだい.{{$odai->id}}</h1>
                     <img class="odai_boke" src="{{ url($odai->filename) }}" alt="odais">
                 {!! Form::model($boke,['route' => 'bokes.store']) !!}
     
@@ -32,7 +32,7 @@ h3{
 .inner{
     width:60%;
     margin: 0 auto;
-    color: white;
+    
 }
 
 .btn-radius{
@@ -47,6 +47,7 @@ h3{
 .form-group{
     font-size: 30px;
     padding: 0px 150px;
+    color: white;
 }
 
 
