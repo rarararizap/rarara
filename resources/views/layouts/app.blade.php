@@ -16,20 +16,22 @@
        
         
     </head>
-    <header>
-        <h2>
-        {!! link_to_route('boke.index', 'KillingJoke',[],['class' => 'wf-nicomoji salmonpink']) !!}
-        </h2>
-    </header>
+   
     <body>
+        <header class="top_logo">
+            
+            {!! link_to_route('boke.index', 'KillingJoke',[],['class' => 'wf-nicomoji salmonpink']) !!}
+            
+        </header>
         
         @include('commons.navbar')
 
         <div class="container">
             
             @yield('content')
-            @include('commons.topbutton')
+            
         </div><br>
+        @include('commons.topbutton')
         @include('commons.footer')
       
     </body>

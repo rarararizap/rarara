@@ -1,19 +1,13 @@
 
    
-        <div class="glyphicon glyphicon-arrow-up top-btn" style="font-size:25px;">トップへ</div>
+        <div class="glyphicon glyphicon-arrow-up top-btn col-xs-12" style="font-size:25px;">トップへ</div>
  
 
 
 <style>
     .top-btn{
-        top: 700px;
-        right:20px;
-        display: block;
-        text-decoration: none;
-        width: 200px;
-        height: 30px;
-        position:fixed;
         color:white;
+        text-align: right;
     }
     
     .top-btn:hover{
