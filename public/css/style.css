@@ -47,7 +47,6 @@ footer{
 }
 
 .odais{
-    margin-bottom:30px;
     width:100%;
     height:auto;
 }
@@ -60,8 +59,8 @@ footer{
 }
 
 .square{
-    width:400px;
-    height:400px;
+    width:100%;
+    height:auto;
     
 }
 
