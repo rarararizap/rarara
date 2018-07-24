@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    　<span class="wf-nicomoji rankingtop3">ランキングがみれるよ</span>
+    　<span class="wf-nicomoji rankingtop3 col-xs-12">ランキングがみれるよ</span>
         @include('bokes.ranking', ['bokes' => $bokes])
       <div class="mosaic">
         <img src="mosaicboke.jpg">
