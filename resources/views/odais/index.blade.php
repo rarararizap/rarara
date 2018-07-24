@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<span class="wf-nicomoji text">おだいのリストがみれてボケれるよ</span>
     <ul class="media-list">
     @foreach ($odais as $odai)
         <li class='col-xm-6 col-xs-6' >
@@ -21,6 +22,11 @@
     float:left;
     margin:0 0px 50px;
     color: white;
+}
+.text{
+    color: #858585;
+    font-size: 50px;
+    margin-left:250px;
 }
 
 
