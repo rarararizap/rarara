@@ -129,3 +129,6 @@ h2{
     color: #064579;
 }
 
+
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}

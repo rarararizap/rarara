@@ -77,4 +77,35 @@
     
 }
 
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight:bold;
+    background-color: #00cc9f;
+}
+
+ul.pagination li a.hover {
+    background-color: #2196F3;
+    color: white;
+}
+
+ul.pagination li a.active {
+    background-color: #2196F3;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #00cc9f;}
+
+
+
 </style>
