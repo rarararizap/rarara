@@ -20,29 +20,31 @@
     </head>
     <body>
        
-
-        <div class="container">
+<div class="container">
             @include('commons.error_messages')
 
           <div class="box">
     <div class="contents">
         <div class="contents_inner">
             
-            <h1 class="wf-nicomoji">ようこそ KillingJokeへ</h1>
+            <h1 class="wf-nicomoji">ようこそ Killing<br class="br-sp" />Jokeへ</h1>
             
             <h4>このサービスは、匿名の大喜利サービスです。</p>
             <h4>見るだけでもよし、ボケてもよし。</h4>
             <h4>みなさんを笑顔にします😄</h4>
             <h4>どうぞごゆっくり</h4>
             
+        <div class='row'>
+            
             <a href="login">
               <button type="button" class="btn-circle btn-xl wf-nicomoji">ログイン</button>
             </a>
             
-            
             <a href="signup">
               <button type="button" class="btn-circle btn-xl wf-nicomoji">とうろく</button>
             </a>
+            
+        </div>
             
         </div>
     </div>
@@ -55,6 +57,12 @@
 
 
 <style type="text/css">
+
+.contaner{
+  max-width: 100%; 
+  height:auto;  
+}
+
 body {
   background:#00CC9F;
   position: relative;
@@ -115,7 +123,6 @@ body:before {
 
 h1{
     font-size:55px;
-}
-
+ .br-sp { display:block; }
 
 </style>
