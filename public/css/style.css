@@ -21,7 +21,6 @@
 
 body {
    background: #00CC9F;
-
 }
 
 a{
@@ -49,8 +48,8 @@ footer{
 
 .odais{
     margin-bottom:30px;
-    width:500px;
-    height:500px;
+    width:100%;
+    height:auto;
 }
 
 
@@ -131,4 +130,8 @@ h2{
 
 
 
-
+.top_logo{
+    font-size:50px;
+    width: 100%;
+    text-align:center;
+}
