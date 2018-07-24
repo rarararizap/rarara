@@ -17,9 +17,15 @@
                 
                     <div class='link-text'>
                     
-                        {!! link_to_route('bokes.create', 'このお題でボケる',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
+                        {!! link_to_route('bokes.create', 'ボケる',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
                         @if (Auth::user()->id != $boke->user_id)
                           @include('bokes.favo_button', ['boke' => $boke])
+                        @endif
+                        
+                         @if (Auth::user()->id == $boke->user_id)
+                            {!! Form::open(['route' => ['bokes.destroy', $boke->id], 'method' => 'delete']) !!}
+                                {{Form::button('<span class="glyphicon glyphicon-trash "></span>', array('type' => 'submit', 'class' => 'btn btn-normal'))}}
+                            {!! Form::close() !!}
                         @endif
                     </div>
                 </div>
@@ -58,6 +64,8 @@
 
 .link-text{
     font-size: 30px;
+    margin:0 auto;
+    font-weight:500px;
 }
 
 
