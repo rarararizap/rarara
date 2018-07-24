@@ -20,7 +20,7 @@
     <body>
         <header class="top_logo">
             
-            {!! link_to_route('boke.index', 'KillingJoke',[],['class' => 'wf-nicomoji salmonpink']) !!}
+           
             
         </header>
         

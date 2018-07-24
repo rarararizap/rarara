@@ -1,14 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="wf-nicomoji text col-xs-12">おだいのリストがみれてボケれるよ</div>
+<div class="wf-nicomoji text col-xs-12">おだいをえらんでボケてね</div>
     <ul class="media-list">
     @foreach ($odais as $odai)
         <li class='col-md-6 col-xs-12' >
-            <h3 class="wf-nicomoji">おだい.{{$odai->id}}</h3>
+            <h1 class="wf-nicomoji">おだい.{{$odai->id}}</h1>
             <a href="odais/{{$odai->id}}"><img class="odais" src="{{ $odai->filename }}" alt="odais"></a>
+            <div class="button">
                 {!! link_to_route('bokes.create', 'ボケる',$odai->id , ['class' => 'btn-radius']) !!}
-
+            </div>
         </li>
     @endforeach
     </ul>
@@ -26,7 +27,9 @@
     text-align:center;
 }
 
-
+.button{
+    text-align:center;
+}
 
 </style>
 
