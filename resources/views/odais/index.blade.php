@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="wf-nicomoji text col-xs-12">おだいのリストがみれてボケれるよ</div>
+<div class="wf-nicomoji text col-xs-12">おだいをえらんでボケてね</div>
     <ul class="media-list">
     @foreach ($odais as $odai)
         <li class='col-md-6 col-xs-12' >
