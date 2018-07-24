@@ -4,7 +4,7 @@
     <ul class="media-list">
     @foreach ($bokes as $boke)
     
-        <li class="media-middle col-xs-5 col-xs-offset-1">
+        <li class="media-middle col-md-5 col-md-offset-1 col-xs-12">
             
             <div class="media-body">
     
@@ -36,15 +36,14 @@
 
 <style type='text/css'>
 
+
+
 .media-middle{
     border:10px dotted white;
     border-radius: 20px;
-    margin: 10px 30px 30px 55px;
-    padding-bottom:20px;
     word-break:break-all;
-    padding-bottom:20px;
     height:680px;
-
+　　margin-bottom:30px;
 }
 
 
@@ -106,6 +105,10 @@ ul.pagination li a.active {
 
 ul.pagination li a:hover:not(.active) {background-color: #00cc9f;}
 
+@media screen and (min-width: 1024px) {
+    .row{ margin-right:50px;}
+    
+}
 
 
 </style>
