@@ -50,7 +50,19 @@
 
 <style type='text/css'>
 
-    
+    .media-middle{
+    min-height:690px;
+    border:10px dotted white;
+    border-radius: 20px;
+    margin-top:30px;
+    word-break:break-all;
+
+}
+
+@media screen and (max-width : 768px){
+    .media-middle{min-height:0px;
+}
+}
 
     
 form{
