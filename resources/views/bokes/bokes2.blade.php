@@ -42,10 +42,7 @@
 <style type='text/css'>
 
     
-.glyphicon-trash{
-        color: #00cc9f;
-        font-size:25px;
-    }
+
     
 form{
     display:inline-block;
