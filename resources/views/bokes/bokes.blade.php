@@ -132,13 +132,14 @@ ul.pagination li a:hover:not(.active) {background-color: #00cc9f;}
     
 }
 
+
 .sample1 {
 	overflow:		hidden;
 	margin:			0px;
 	position:		relative;	/* 相対位置指定 */
 }
 .sample1 .caption {
-	font-size:		130%;
+	font-size:		150%;
 	text-align: 	center;
 	vertical-align: middle;
 	padding-top:	180px;
@@ -159,6 +160,11 @@ ul.pagination li a:hover:not(.active) {background-color: #00cc9f;}
 	opacity:		1;	/* マスクを表示する */
 }
 
+@media screen and (max-width:768px){
+.sample1 .caption {
+    font-size: 70%;
+}
+}
 
 
 
