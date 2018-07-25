@@ -23,7 +23,7 @@
                     <div>
                        {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
                         @if (isset($boke->count))
-                          <class="text-leftr">いいね：{{ $boke->count}} 
+                          <div class="text-leftr">いいね：{{ $boke->count}} 
                         @endif
                         
                         @include('bokes.favo_button', ['boke' => $boke])
@@ -48,8 +48,13 @@
 }
 
 
-.media-text p {
-    font-size:45px;
+.text-leftr{
+    font-size: calc(10px + 2vw);
+}
+
+
+.media-text p{
+    font-size: calc(10px + 3vw);
 }
 
 .media{
@@ -83,7 +88,7 @@
 
 
 .junni {
-    font-size: 50px;
+    font-size: calc(10px + 5vw);
 }
 
 .sample1 {

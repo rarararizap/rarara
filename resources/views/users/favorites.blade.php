@@ -56,6 +56,7 @@
 }
 .text{
     color: #858585;
-    font-size: 50px;
+    font-size: calc(18px + 0.25vw);
+    
 }
 </style>

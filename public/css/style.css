@@ -150,3 +150,7 @@ img {
         color: #00cc9f;
         font-size:25px;
     }
+    
+.text{ 
+    font-size: calc(18px + 0.25vw);
+}
