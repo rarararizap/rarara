@@ -151,3 +151,9 @@ img {
     max-width: 100%; 
     height:auto;
 }
+
+
+.glyphicon-trash{
+        color: #00cc9f;
+        font-size:25px;
+    }

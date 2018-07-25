@@ -12,6 +12,7 @@
         </div>            
     
         <ul class="media-list">
+            {!! $bokes->render() !!}
             @foreach ($bokes as $boke)
             
             
@@ -92,5 +93,8 @@
     font-size:20px;
     }
     
+    .wf-nicomoji{
+    ;
+    }
 }
 </style>

@@ -49,6 +49,7 @@
 
 
 .media-middle{
+    min-height:700px;
     border:10px dotted white;
     border-radius: 20px;
     margin-top:30px;
@@ -56,6 +57,10 @@
 
 }
 
+@media screen and (max-width : 768px){
+    .media-middle{min-height:0px;
+}
+}
 
 
 .media-text p {
