@@ -140,6 +140,10 @@ h1{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     border: solid 3px #ff5959;
     margin: 6px;
+    padding: 0;
 }
 }
+
+
+
 </style>
