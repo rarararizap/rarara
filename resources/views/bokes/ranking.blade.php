@@ -1,51 +1,44 @@
-<ul class="media-list">
-@foreach ($bokes as $key => $boke)
-    <li class="media">
-        <div class="container">
-            <div class="media-body">
-                
-                <div class="junni">No.{{ $key+1 }}:{!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}</div>
-                
-                <div>
-                    <a href="{{ action('OdaiController@show', $boke->odai_id) }}">
-                        <div class="sample1">
-                            <img src="{{ url($boke->filename) }}" alt="odais" class="square">
-                                <div class="mask">
-                                    <div class="caption">他の人のボケも見てみる</div>
-	                            </div>
-                            
-                        </div></a>
-                        
-                    <div class='media-text'>
-                        <p>{{$boke->content}}</p>
-                    </div>
-                
-                    <div>
-                       {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
-                        @if (isset($boke->count))
-                          <class="text-leftr">いいね：{{ $boke->count}} 
-                        @endif
-                        
-                        @include('bokes.favo_button', ['boke' => $boke])
-                    </div>
-                
-                </div>
-            </div>
-        </div>
-    </li>
-@endforeach
-</ul>
 
+
+<div class='row'>
+    <ul class="media-list">
+    @foreach ($bokes as $key => $boke)
+        <li class="media col-md-offset-3 col-md-6 col-md-offset-3 col-xs-12">
+                <div class="media-body">
+                    
+                    <div class="junni">No.{{ $key+1 }}:{!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}</div>
+                    
+                    <div>
+                        <a href="{{ action('OdaiController@show', $boke->odai_id) }}">
+                            <div class="sample1">
+                                <img src="{{ url($boke->filename) }}" alt="odais" class="square">
+                                    <div class="mask">
+                                        <div class="caption">他の人のボケも見てみる</div>
+    	                            </div>
+                                
+                            </div></a>
+                            
+                        <div class='media-text'>
+                            <p>{{$boke->content}}</p>
+                        </div>
+                    
+                        <div>
+                           {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
+                            @if (isset($boke->count))
+                              <class="text-leftr">いいね：{{ $boke->count}} 
+                            @endif
+                            
+                            @include('bokes.favo_button', ['boke' => $boke])
+                        </div>
+                    
+                    </div>
+                </div>
+        </li>
+    @endforeach
+    </ul>
+</div>
 
 <style tipe='text/css'>
-.container{ 
-    text-align:center;
-    border-radius: 50px;
-    font-size:30px;
-    word-break:break-all;
-    width:90%;
-    height:auto;
-}
 
 
 .media-text p {
@@ -55,6 +48,7 @@
 .media{
     border:10px dotted white;
     border-radius: 30px;
+    margin-top: 30px;
 }
 
 .media:first-child {
@@ -111,6 +105,11 @@
 }
 .sample1:hover .mask {
 	opacity:		1;	/* マスクを表示する */
+}
+
+@media screen and (min-width: 1024px) {
+    
+    
 }
 
 </style>
