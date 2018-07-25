@@ -11,7 +11,7 @@
                         {!! Form::hidden('odai_id', $odai->id) !!}
                         {!! Form::label('content', 'ボケる') !!}
                         {!! Form::text('content',null, ['class' => 'form-control','autocomplete' => 'off']) !!}
-                        {!! Form::submit('送信', ['class' => 'btn-radius']) !!}
+                        {!! Form::submit('おくる', ['class' => 'btn-radius']) !!}
                     </div>
         
                     
@@ -37,9 +37,14 @@ h3{
 }
 
 .form-group{
+    margin-top:15px;
     font-size: 30px;
     padding: 0px 150px;
     color: white;
+}
+
+.btn-radius{
+    margin-top:15px;
 }
 
 .odai_boke{

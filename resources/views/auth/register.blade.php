@@ -45,7 +45,7 @@
                             {!! Form::submit('登録', ['class' => 'btn btn-primary btn-block']) !!}
                         {!! Form::close() !!}
                             
-                            <br>
+                        
                             
                         <p>　{!! link_to_route('login', 'ログインはこちら','',['class'=>'text']) !!}</p>
                     </div>
@@ -121,7 +121,26 @@ body{
 
 .text{
     color:#858585;
+    /*margin-top:0;*/
 }
+
+
+@media screen and (max-width : 991px){
+   .circle {
+      width: 55vh;
+      height: 55vh;
+      padding-top:5px;
+    }
+    
+   .form-control{
+       height:30px;
+   }
+
+   .btn{
+       height:30px;
+   }
+}
+
 
 
 </style>
