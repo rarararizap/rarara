@@ -61,4 +61,11 @@
     color: #858585;
     font-size: 50px;
 }
+
+@media screen and (max-width: 768px){
+    .text{
+        font-size: 30px;
+    }
+    
+}
 </style>

@@ -27,10 +27,11 @@
                                         <div>
                                            {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
                                             @if (isset($boke->count))
-                                              <class="text-leftr">いいね：{{ $boke->count}} 
+                                              <span class="text-leftr">いいね：{{ $boke->count}}
                                             @endif
                                             
                                             @include('bokes.favo_button', ['boke' => $boke])
+                                             </span>
                                         </div>
                                     
                                     </div>
@@ -58,7 +59,12 @@
 .text{
     color: #858585;
     font-size: 50px;
+    text-align:center;
     }
+
+.text-leftr{
+    font-size: calc(10px + 1vw);
+}
 
 .mosaic{
     border:10px dotted white;
@@ -164,11 +170,11 @@
   border-radius:50%;
 }
 
-@media screen and (max-width: 425px) {
-    
-}
+
 .media-text p {
-    font-size:45px;
+    font-size: calc(15px + 1.5vw);
+    text-align:center;
+    font-weight: bold;
 }
 
 .media{
@@ -190,6 +196,11 @@
     color: white;
 }
 
+@media screen and (max-width: 768px){
+    .btn-radius{
+        font-size:20px;
+    }
+}
 
 
 .btn-radius:hover {
@@ -203,7 +214,8 @@
 
 
 .junni {
-    font-size: 50px;
+     font-size: calc(12px + 2.5vw);
+    text-align:center;
 }
 
 .sample1 {
@@ -212,7 +224,7 @@
 	position:		relative;	/* 相対位置指定 */
 }
 .sample1 .caption {
-	font-size:		100%;
+	font-size:		150%;
 	text-align: 	center;
 	vertical-align: middle;
 	padding-top:	50%;
@@ -233,11 +245,12 @@
 	opacity:		1;	/* マスクを表示する */
 }
 
-@media screen and (min-width: 1024px) {
-    
+@media screen and (max-width: 768px){
+    .text{
+        font-size: 30px;
+    }
     
 }
-
 </style>
 
 @endsection

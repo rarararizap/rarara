@@ -40,6 +40,14 @@
     text-align:center;
 }
 
+@media screen and (max-width: 768px){
+    .text{
+        font-size: 30px;
+    }
+    
+}
+
+
 
 .sample1 {
 	overflow:		hidden;
@@ -67,6 +75,7 @@
 .sample1:hover .mask {
 	opacity:		1;	/* マスクを表示する */
 }
+
 
 </style>
 
