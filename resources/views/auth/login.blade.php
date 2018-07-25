@@ -71,7 +71,7 @@
   border-radius: 50%;
   /*margin: 30px 20px 30px 40px;*/
   text-align: center;
-  padding-top: 100px;
+  padding-top: 150px;
   
   position: absolute;
   top: 2.5%;
@@ -120,4 +120,26 @@ body{
 .text{
     color:#858585;
 }
+
+@media screen and (max-width : 991px){
+   .circle {
+      width: 55vh;
+      height: 55vh;
+      padding-top:20px;
+    } 
+    
+@media screen and (max-width : 320px){
+   .circle {
+      width: 50vh;
+      height: 50vh;
+      padding-top:10px;
+      font-size:10px;
+    } 
+    
+    h1{
+        font-size:20px;
+    }
+
+}
+
 </style>
