@@ -15,12 +15,12 @@ class UserFavoriteController extends Controller
      public function store(Request $request, $bokeId)
     {
         \Auth::user()->favorite($bokeId);
-        return redirect()->back();
+        return redirect()->back()->with('status', __('ボケをいいねしたよー'));
     }
 
     public function destroy($bokeId)
     {
         \Auth::user()->unfavorite($bokeId);
-        return redirect()->back();
+        return redirect()->back()->with('status', __('ボケのいいねをかいじょしたよー'));
     }
 }

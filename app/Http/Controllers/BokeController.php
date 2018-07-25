@@ -50,7 +50,7 @@ class BokeController extends Controller
             'odai_id' => $request->odai_id,
         ]);
 
-         return redirect('/');
+         return redirect('/')->with('status', __('ボケをとうこうしたよー'));;;
     }
     
     
@@ -62,7 +62,7 @@ class BokeController extends Controller
             $boke->delete();
         }
 
-        return redirect()->back();
+        return redirect()->back()->with('status', __('ボケをけしたよー'));;;
     }
 
 

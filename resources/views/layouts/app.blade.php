@@ -24,8 +24,15 @@
             
         </header>
         
-        @include('commons.beginner')
-        @include('commons.navbar')
+
+            @include('commons.beginner')
+            @include('commons.navbar')
+            @if (session('status'))
+                        <div class="alert alert-success wf-nicomoji">
+                            {{ session('status') }}
+                        </div>
+        　　@endif
+                
 
         <div class="container">
             

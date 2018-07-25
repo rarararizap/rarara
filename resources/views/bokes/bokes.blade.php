@@ -1,4 +1,5 @@
 
+
 <div class="row">
 
     <ul class="media-list">
@@ -49,7 +50,7 @@
 
 
 .media-middle{
-    min-height:700px;
+    min-height:680px;
     border:10px dotted white;
     border-radius: 20px;
     margin-top:30px;
@@ -77,7 +78,8 @@
 }
 
 .link-text{
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: bold;
     margin:0 auto;
     font-weight:500px;
 }

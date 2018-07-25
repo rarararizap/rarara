@@ -5,6 +5,7 @@
 
 
 <div class="wf-nicomoji text col-xs-12">みんなのボケがみれるよ</div>
+   
     @include('bokes.bokes',['bokes'=>$bokes])
     
     
