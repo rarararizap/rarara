@@ -3,15 +3,20 @@
 
 @section('content')
 
-<span class="wf-nicomoji text">みんなのボケがみれるよ</span>
+<div class="wf-nicomoji text">みんなのボケがみれるよ</div>
     @include('bokes.bokes',['bokes'=>$bokes])
-@endsection
-
-
-<style>
+    
+    
+    <style>
 .text{
     color: #858585;
     font-size: 50px;
 }
 
+
+
+
 </style>
+@endsection
+
+

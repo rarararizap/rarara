@@ -38,7 +38,7 @@
                 <ul class="nav navbar-nav navbar-right">
                    
                         <li class='timeline'>{!! link_to_route('boke.index', 'タイムライン', ['id' => Auth::id()]) !!}</li>
-                                <li>{!! link_to_route('odais.index', 'ボケて',['id' => Auth::id()]) !!}</li>
+                                <li>{!! link_to_route('odais.index', 'ボケる',['id' => Auth::id()]) !!}</li>
                                 <li>{!! link_to_route('ranking.overall', 'ランキング') !!}</li>
                         
                         
