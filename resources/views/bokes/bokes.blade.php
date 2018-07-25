@@ -36,15 +36,12 @@
                         @endif
                     </div>
                 </div>
-    
             </div>
         </li>
     @endforeach
     </ul>
 </div>
-
-
-{!! $bokes->render() !!}
+   {!! $bokes->render() !!}
 
 
 <style type='text/css'>
@@ -54,14 +51,15 @@
 .media-middle{
     border:10px dotted white;
     border-radius: 20px;
+    margin-top:30px;
     word-break:break-all;
-    height:680px;
-　　margin-bottom:30px;
+
 }
 
 
+
 .media-text p {
-    font-size:26px;
+    font-size:25px;
     font-weight:bold;
 }
 
