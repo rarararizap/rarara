@@ -24,6 +24,7 @@
             
         </header>
         
+        @include('commons.beginner')
         @include('commons.navbar')
 
         <div class="container">

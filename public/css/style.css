@@ -9,7 +9,7 @@
     color: white;
     font-size:30px;
     text-decoration:none;
-    margin-bottom:10px;
+    margin-right:30px;
 }
 
 
@@ -47,7 +47,6 @@ footer{
 }
 
 .odais{
-    margin-bottom:30px;
     width:100%;
     height:auto;
 }
@@ -60,8 +59,8 @@ footer{
 }
 
 .square{
-    width:400px;
-    height:400px;
+    width:100%;
+    height:auto;
     
 }
 
@@ -145,8 +144,15 @@ h2{
     text-align:center;
 }
 
+
  @media screen and (max-width : 768px) {
  .text{
     margin-top:100px;
 }
+}
+
+
+img { 
+    max-width: 100%; 
+    height:auto;
 }

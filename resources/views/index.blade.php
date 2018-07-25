@@ -3,7 +3,8 @@
 
 @section('content')
 
-<div class="wf-nicomoji text">みんなのボケがみれるよ</div>
+
+<div class="wf-nicomoji text col-xs-12">みんなのボケがみれるよ</div>
     @include('bokes.bokes',['bokes'=>$bokes])
     
     

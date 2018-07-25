@@ -7,7 +7,13 @@
                 <div class="junni">No.{{ $key+1 }}:{!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}</div>
                 
                 <div>
-                    <a href="{{ action('OdaiController@show', $boke->odai_id) }}"><img src="{{ url($boke->filename) }}" alt="odais" class="square"></a>
+                    <a href="{{ action('OdaiController@show', $boke->odai_id) }}">
+                        <div class="sample1">
+                            <img src="{{ url($boke->filename) }}" alt="odais" class="square">
+                                <div class="mask">
+                                    <div class="caption">他の人のボケも見てみる</div>
+	                           </div></a>
+                            
                 </div>
                 <div class='media-text'>
                     <p>{{$boke->content}}</p>
@@ -73,6 +79,34 @@
 
 
 .junni {
-    font-size:80px;
+    font-size: 80px;
 }
+
+.sample1 {
+	overflow:		hidden;
+	margin:			0px;
+	position:		relative;	/* 相対位置指定 */
+}
+.sample1 .caption {
+	font-size:		100%;
+	text-align: 	center;
+	vertical-align: middle;
+	padding-top:	300px;
+	color:			#fff;
+	text-decoration: underline;
+}
+.sample1 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.sample1:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
 </style>
