@@ -17,38 +17,33 @@
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
         
         
-    </head>
+</head>
     <body>
-       
-<div class="container">
-            @include('commons.error_messages')
-
-          <div class="box">
-    <div class="contents">
-        <div class="contents_inner">
-            
-            <h1 class="wf-nicomoji">ようこそ Killing<br class="br-sp" />Jokeへ</h1>
-            
-            <h4>このサービスは、匿名の大喜利サービスです。</p>
-            <h4>見るだけでもよし、ボケてもよし。</h4>
-            <h4>みなさんを笑顔にします😄</h4>
-            <h4>どうぞごゆっくり</h4>
-            
-        <div class='row'>
-            
-            <a href="login">
-              <button type="button" class="btn-circle btn-xl wf-nicomoji">ログイン</button>
-            </a>
-            
-            <a href="signup">
-              <button type="button" class="btn-circle btn-xl wf-nicomoji">とうろく</button>
-            </a>
-            
-        </div>
-            
-        </div>
-    </div>
-</div>
+        <div class="container">
+                    @include('commons.error_messages')
+            <div class="contents col-md-offset-3 col-md-6 col-xs-12">
+                
+                <div class="contents_inner col-md-offset-3 col-md-6 col-xs-12">
+                    
+                    <h1 class="wf-nicomoji">ようこそ Killing<br class="br-sp" />Jokeへ</h1>
+                    
+                    <h4>このサービスは、匿名の大喜利サービスです。</p>
+                    <h4>見るだけでもよし、ボケてもよし。</h4>
+                    <h4>みなさんを笑顔にします😄</h4>
+                    <h4>どうぞごゆっくり</h4>
+                    
+                        <div class='row'>
+                            <a href="login">
+                              <button type="button" class="btn-circle btn-xl wf-nicomoji">ログイン</button>
+                            </a>
+                            
+                            <a href="signup">
+                              <button type="button" class="btn-circle btn-xl wf-nicomoji">とうろく</button>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
         </div>
     </body>
 </html>
@@ -123,6 +118,28 @@ body:before {
 
 h1{
     font-size:55px;
- .br-sp { display:block; }
-
+}
+ .br-sp { display:block; 
+}
+ 
+@media screen and (max-width : 425px) {
+    .btn-circle{
+    display: inline-block;
+    text-decoration: none;
+    background: #ff5959;
+    color: white;
+    width: 120px;
+    height: 120px;
+    font-size: 30px;
+    line-height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    border: solid 3px #ff5959;
+    margin: 6px;
+}
+}
 </style>
