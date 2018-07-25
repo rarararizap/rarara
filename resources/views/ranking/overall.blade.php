@@ -1,19 +1,52 @@
 \@extends('layouts.app')
 @section('content')
 
-  <div class=inner>
             　<div class="wf-nicomoji text col-xs-12">ランキングがみれるよ</div>
-                 @include('bokes.ranking', ['bokes' => $bokes])
-              <div class="mosaic">
-                <img src="mosaicboke.jpg">
-
-
-                <div class="cp_btn wf-nicomoji" id="signup-show" data-open="signup-modal">
-                    ４いいこう
-                </div>
-        
+                 <div class='row'>
+                    <ul class="media-list">
+                    @foreach ($bokes as $key => $boke)
+                        <li class="media col-md-offset-3 col-md-6 col-md-offset-3 col-xs-12">
+                                <div class="media-body">
+                                    
+                                    <div class="junni">No.{{ $key+1 }}:{!! link_to_route('users.show', $boke->nickname, ['id' => $boke->user_id]) !!}</div>
+                                    
+                                    <div>
+                                        <a href="{{ action('OdaiController@show', $boke->odai_id) }}">
+                                            <div class="sample1">
+                                                <img src="{{ url($boke->filename) }}" alt="odais" class="square">
+                                                    <div class="mask">
+                                                        <div class="caption">他の人のボケも見てみる</div>
+                    	                            </div>
+                                                
+                                            </div></a>
+                                            
+                                        <div class='media-text'>
+                                            <p>{{$boke->content}}</p>
+                                        </div>
+                                    
+                                        <div>
+                                           {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
+                                            @if (isset($boke->count))
+                                              <class="text-leftr">いいね：{{ $boke->count}} 
+                                            @endif
+                                            
+                                            @include('bokes.favo_button', ['boke' => $boke])
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                        </li>
+                    @endforeach
+                    </ul>
+                    <div class="mosaic col-md-offset-3 col-md-6 col-md-offset-3 col-xs-12"><img src="mosaicboke.jpg">
+                         <div class="cp_btn wf-nicomoji" id="signup-show" data-open="signup-modal">
+                              もっとみる
+                         </div>
+                    </div>
+                 </div>
               </div>
-    </div>
+              
+              
 
 <style>
 .inner{
@@ -21,19 +54,22 @@
     margin: 0 auto;
     max-width: 600px;
     }
-   .text{
+
+.text{
     color: #858585;
     font-size: 50px;
     }
-    .mosaic{
-        border:10px dotted white;
-        border-radius: 20px;
-        word-break:break-all;
-        position :relative;
+
+.mosaic{
+    border:10px dotted white;
+    border-radius: 20px;
+    word-break:break-all;
+    position :relative;
+    margin-top:30px;   
     
     }
     
-    .mosaic .cp_btn{
+.mosaic .cp_btn{
         position: absolute;
         top: 50%;
         left: 50%;
@@ -45,7 +81,7 @@
         
     }
     
-    .cp_btn {
+.cp_btn {
         position: relative;
         
         width: 250px;
@@ -126,6 +162,80 @@
   margin: 10px auto;
   cursor: pointer;
   border-radius:50%;
+}
+
+@media screen and (max-width: 425px) {
+    
+}
+.media-text p {
+    font-size:45px;
+}
+
+.media{
+    border:10px dotted white;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.media:first-child {
+    margin-top:30px;
+}
+
+.btn-radius{
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 3px #f55555;
+    color: white;
+}
+
+
+
+.btn-radius:hover {
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    
+}
+
+.link-text{
+    font-size: 30px;
+}
+
+
+.junni {
+    font-size: 50px;
+}
+
+.sample1 {
+	overflow:		hidden;
+	margin:			0px;
+	position:		relative;	/* 相対位置指定 */
+}
+.sample1 .caption {
+	font-size:		100%;
+	text-align: 	center;
+	vertical-align: middle;
+	padding-top:	50%;
+	color:			#fff;
+	text-decoration: underline;
+}
+.sample1 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.sample1:hover .mask {
+	opacity:		1;	/* マスクを表示する */
+}
+
+@media screen and (min-width: 1024px) {
+    
+    
 }
 
 </style>
