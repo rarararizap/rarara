@@ -13,11 +13,13 @@
                 </p>
                     <a href="{{ action('OdaiController@show', $boke->odai_id) }}">
                         <div class="sample1">
-                            <img src="{{ url($boke->filename) }}" alt="odais" class="odais square"></a> 
+                            <img src="{{ url($boke->filename) }}" alt="odais" class="odais square">
                             <div class="mask">
 		                        <div class="caption">他の人のボケも見てみる</div>
 	                        </div>
                         </div>
+                        
+                    </a> 
                         
                       <div class='media-text'>
                         <p>{{$boke->content}}</p>
@@ -93,6 +95,7 @@ form{
 
 @media screen and (min-width: 1024px) {
     .row{ margin-right:50px;}
+}
 
 .sample1 {
 	overflow:		hidden;
@@ -100,7 +103,7 @@ form{
 	position:		relative;	/* 相対位置指定 */
 }
 .sample1 .caption {
-	font-size:		130%;
+	font-size:		150%;
 	text-align: 	center;
 	vertical-align: middle;
 	padding-top:	180px;
@@ -121,7 +124,11 @@ form{
 	opacity:		1;	/* マスクを表示する */
 }
 
-
+@media screen and (max-width:768px){
+.sample1 .caption {
+    font-size: 70%;
+}
+}
 </style>
 
 
