@@ -11,6 +11,18 @@
     text-decoration:none;
     margin-right:30px;
 }
+@media screen and (max-width:768px){
+.btn-radius{
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 8px #f55555;
+    color: white;
+    font-size:15px;
+    text-decoration:none;
+    margin-right:30px;
+ }}
 
 
 
