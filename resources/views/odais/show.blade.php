@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="outer">
-    <div class="inner">    
+    <div class="inner col-xs-12 col-md-8 col-md-offset-2">    
         <h1 class="wf-nicomoji">みんなのボケ</h1>
         
         <img class="odai_show" src="{{ url($odai->filename) }}" alt="odai1">
@@ -46,9 +46,11 @@
 <style type="text/css">
 
 .inner{
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 700px;
+  word-break:break-all;
+  
 }
 
 .nickname {
@@ -72,4 +74,23 @@
     margin-top:30px;
 }
 
+.odai_show{
+    width:100%;
+    height:auto;
+}
+
+.boke_button{
+    margin-top:20px;
+}
+
+@media screen and (max-width : 768px){
+    .media-text{
+        font-size:20px;
+    }
+    
+    .nickname {
+    font-size:20px;
+    }
+    
+}
 </style>

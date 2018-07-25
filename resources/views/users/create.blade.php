@@ -36,15 +36,6 @@ h3{
     
 }
 
-.btn-radius{
-    
-
-}
-
-.odai_boke{
-    height:600px;
-}
-
 .form-group{
     font-size: 30px;
     padding: 0px 150px;
