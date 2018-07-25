@@ -1,43 +1,29 @@
 \@extends('layouts.app')
 @section('content')
-    <div class=inner>
-            　<span class="wf-nicomoji rankingtop3 col-xs-12">ランキングがみれるよ</span>
-                @include('bokes.ranking', ['bokes' => $bokes])
+
+  <div class=inner>
+            　<div class="wf-nicomoji text col-xs-12">ランキングがみれるよ</div>
+                 @include('bokes.ranking', ['bokes' => $bokes])
               <div class="mosaic">
                 <img src="mosaicboke.jpg">
-        
-        
+
+
                 <div class="cp_btn wf-nicomoji" id="signup-show" data-open="signup-modal">
                     ４いいこう
                 </div>
         
               </div>
-              
-         <div class="signup-modal-wrapper" id="signup-modal">
-          <div class="modal close-modal">
-            <div id="signup-form">
-                <h2>有料会員登録</h2>
-                <form action="#">
-                  <input class="form-control" type="text" placeholder="登録">
-                  <input class="form-control" type="password" placeholder="してね">
-                  <div id="submit-btn">登録</div>
-                </form>
-            </div>
-         </div>
-        </div>
     </div>
+
 <style>
 .inner{
-  width: 60%;
-  margin: 0 auto;
-  max-width: 600px;
-}
-</style>
-@endsection
-<style>
-    .rankingtop3{
-        color: #858585;
-        font-size: 50px;
+    width: 60%;
+    margin: 0 auto;
+    max-width: 600px;
+    }
+   .text{
+    color: #858585;
+    font-size: 50px;
     }
     .mosaic{
         border:10px dotted white;
@@ -141,4 +127,17 @@
   cursor: pointer;
   border-radius:50%;
 }
+
 </style>
+
+@endsection
+
+
+
+
+
+
+
+
+
+

@@ -101,28 +101,35 @@ h2{
 
 .navbar {
     z-index: 1;
-    top: 20px;
-    left: 10px;
-    background: rgba(255,255,255,0.8);
+    top: 0px;
+    left: 0px;
+    background: rgba(255,255,255);
    
     padding: 8px 0;
     list-style:none;
     margin-top: 50px;
     border-radius: 50px;
-    margin-bottom: 50px;
     max-width: 100%; 
     height:auto;
 }
 
+@media screen and (max-width : 768px) {
+ .navbar-default{
+    position:fixed;
+    margin-top:0px;
+}
+}
+
 .navbar a {
-    padding:0px 62px;
+    padding-left:5px;
     text-decoration:none;
     font-size: 30px;
-    color: #2196F3;
+    color: #F55555;
     display: inline-block;
     text-align: center;
     float: left;
     vertical-align:middle;
+    
 }
 
 .navbar a:hover {
@@ -138,8 +145,14 @@ h2{
 }
 
 
+ @media screen and (max-width : 768px) {
+ .text{
+    margin-top:100px;
+}
+}
+
+
 img { 
     max-width: 100%; 
     height:auto;
 }
-
