@@ -12,22 +12,24 @@
                             <img src="{{ url($boke->filename) }}" alt="odais" class="square">
                                 <div class="mask">
                                     <div class="caption">他の人のボケも見てみる</div>
-	                           </div></a>
+	                            </div>
                             
-                </div>
-                <div class='media-text'>
-                    <p>{{$boke->content}}</p>
-                </div>
+                        </div></a>
+                        
+                    <div class='media-text'>
+                        <p>{{$boke->content}}</p>
+                    </div>
                 
-                <div>
-                   {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
-                    @if (isset($boke->count))
-                      <class="text-leftr">いいね：{{ $boke->count}} 
-                    @endif
-                    
-                    @include('bokes.favo_button', ['boke' => $boke])
-                </div>
+                    <div>
+                       {!! link_to_route('bokes.create', '　ボケる　',['id' => $boke->odai_id],['class' => 'btn-radius']) !!}
+                        @if (isset($boke->count))
+                          <class="text-leftr">いいね：{{ $boke->count}} 
+                        @endif
+                        
+                        @include('bokes.favo_button', ['boke' => $boke])
+                    </div>
                 
+                </div>
             </div>
         </div>
     </li>
@@ -41,11 +43,13 @@
     border-radius: 50px;
     font-size:30px;
     word-break:break-all;
+    width:90%;
+    height:auto;
 }
 
 
 .media-text p {
-    font-size:100px;
+    font-size:45px;
 }
 
 .media{
@@ -79,7 +83,7 @@
 
 
 .junni {
-    font-size: 80px;
+    font-size: 50px;
 }
 
 .sample1 {
@@ -91,7 +95,7 @@
 	font-size:		100%;
 	text-align: 	center;
 	vertical-align: middle;
-	padding-top:	300px;
+	padding-top:	50%;
 	color:			#fff;
 	text-decoration: underline;
 }
