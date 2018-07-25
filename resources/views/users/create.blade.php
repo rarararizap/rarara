@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    
+     
         <div class="container col-xs-12 col-md-8 col-md-offset-2">
+            @include('commons.error_messages')
                     <h1 class="wf-nicomoji">おだい.{{$odai->id}}</h1>
                     <img class="odai_boke" src="{{ url($odai->filename) }}" alt="odais">
                 {!! Form::model($boke,['route' => 'bokes.store']) !!}
@@ -18,7 +19,6 @@
                     
                 {!! Form::close() !!}
                 
-                @include('commons.error_messages')
                 
                 
         </div>
