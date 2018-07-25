@@ -90,6 +90,7 @@ form{
 }
 
 .row{
+
     font-weight:normal;
 }
 

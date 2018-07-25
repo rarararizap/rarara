@@ -132,6 +132,7 @@ ul.pagination li a:hover:not(.active) {background-color: #00cc9f;}
     
 }
 
+
 .sample1 {
 	overflow:		hidden;
 	margin:			0px;
