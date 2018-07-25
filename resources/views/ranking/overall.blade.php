@@ -63,7 +63,8 @@
     }
 
 .text-leftr{
-    font-size: calc(10px + 1vw);
+    font-size: calc(10px + 1.5vw);
+    font-weight:bold;
 }
 
 .mosaic{
@@ -172,7 +173,7 @@
 
 
 .media-text p {
-    font-size: calc(15px + 1.5vw);
+    font-size: 25px;
     text-align:center;
     font-weight: bold;
 }
@@ -214,7 +215,7 @@
 
 
 .junni {
-     font-size: calc(12px + 2.5vw);
+     font-size:25px;
     text-align:center;
 }
 
