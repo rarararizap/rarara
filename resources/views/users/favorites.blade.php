@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="wf-nicomoji text">{{$user->nickname}}のおきにいりがみれるよ</div>
+<div class="wf-nicomoji text">{{$user->nickname}}の<br>おきにいりがみれるよ</div>
     <div class="row">
         
         <div class="col-xs-12">
@@ -57,6 +57,7 @@
 .text{
     color: #858585;
     font-size: 50px;
+    text-align:center;
 }
 
 @media screen and (max-width: 768px){

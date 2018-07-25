@@ -47,7 +47,10 @@
     border: solid 5px #00e6b3;
     border-radius: 15px;
     background-color:#00e6b3;
+    font-size: calc(10px + 1vw);
 }
+
+
 
 .glyphicon-question-sign{
     color:#f55555;

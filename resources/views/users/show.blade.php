@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="wf-nicomoji text">{{$user->nickname}}のボケがみれるよ</div>
+<div class="wf-nicomoji text">{{$user->nickname}}の<br>ボケがみれるよ</div>
     <div class="row">
         
         <div class="col-xs-12">

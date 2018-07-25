@@ -50,7 +50,7 @@
 
 
 .media-middle{
-    min-height:680px;
+    min-height:690px;
     border:10px dotted white;
     border-radius: 20px;
     margin-top:30px;
