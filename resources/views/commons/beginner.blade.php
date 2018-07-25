@@ -11,13 +11,13 @@
     <div id="open" style="display:none;clear:both;" class="col-xs-12 col-md-6 col-md-offset-3">
     
         <span class="glyphicon glyphicon-question-sign lead"> KillingJokeって何？</span><br>
-            おだいの画像に一言ボケるサービスです。<br>
+            おだいの画像に一言ボケるサービスです<br>
         <br>
         
         <span class="glyphicon glyphicon-question-sign lead"> どうやってボケるの？</span><br>
-            各ボケについている <span class="btn-example">ボケる</span> ボタンを押すと投稿画面にいけます。<br>
+            各ボケについている <span class="btn-example">ボケる</span> ボタンを押すと投稿画面にいけます<br>
             <br>
-            また、画像をクリックするとおだいのリストが見れます。<br>
+            おだいの画像をクリックすると他の人のボケが見れます<br>
         <br>
         
         <span class="glyphicon glyphicon-question-sign lead"> ちゅういすることは？</span><br>
