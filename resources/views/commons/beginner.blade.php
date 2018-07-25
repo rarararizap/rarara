@@ -15,12 +15,13 @@
         <br>
         
         <span class="glyphicon glyphicon-question-sign lead"> どうやってボケるの？</span><br>
-            各ボケについている「ボケる」ボタンを押すと投稿画面にいけます。<br>
+            各ボケについている <span class="btn-example">ボケる</span> ボタンを押すと投稿画面にいけます。<br>
+            <br>
             また、画像をクリックするとおだいのリストが見れます。<br>
         <br>
         
         <span class="glyphicon glyphicon-question-sign lead"> ちゅういすることは？</span><br>
-            誹謗・中傷、悪意のある投稿、<br>
+            誹謗・中傷、悪意のあsる投稿、<br>
             個人が特定できる内容は投稿しないようにしてください<br>
             <br>
     
@@ -56,6 +57,16 @@
 @media screen and (max-width: 767px) {
    /* 表示領域が320px以下の場合に適用するスタイル */
    .forbeginner { margin-top:100px; }
+}
+
+.btn-example{
+    background-color: #F55555;
+    border-color: #F55555;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: solid 8px #f55555;
+    color: white;
+    text-decoration:none;
 }
 
 </style>
