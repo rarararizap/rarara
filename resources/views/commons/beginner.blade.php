@@ -21,7 +21,7 @@
         <br>
         
         <span class="glyphicon glyphicon-question-sign lead"> ちゅういすることは？</span><br>
-            誹謗・中傷、悪意のあsる投稿、<br>
+            誹謗・中傷、悪意のある投稿、<br>
             個人が特定できる内容は投稿しないようにしてください<br>
             <br>
     
