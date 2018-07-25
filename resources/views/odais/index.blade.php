@@ -6,7 +6,15 @@
     @foreach ($odais as $odai)
         <li class='col-md-6 col-xs-12' >
             <h1 class="wf-nicomoji">おだい.{{$odai->id}}</h1>
-            <a href="odais/{{$odai->id}}"><img class="odais" src="{{ $odai->filename }}" alt="odais"></a>
+            <a href="odais/{{$odai->id}}">
+             <div class="sample1">
+                <img src="{{ url($odai->filename) }}" alt="odais" class="square">
+                    <div class="mask">
+                        <div class="caption">他の人のボケも見てみる</div>
+                    </div>
+                            
+             </div>
+            </a>
             <div class="button">
                 {!! link_to_route('bokes.create', 'ボケる',$odai->id , ['class' => 'btn-radius']) !!}
             </div>
@@ -28,7 +36,36 @@
 }
 
 .button{
+    margin-top: 15px;
     text-align:center;
+}
+
+
+.sample1 {
+	overflow:		hidden;
+	margin:			0px;
+	position:		relative;	/* 相対位置指定 */
+}
+.sample1 .caption {
+	font-size:		150%;
+	text-align: 	center;
+	vertical-align: middle;
+	padding-top:	50%;
+	color:			#fff;
+	text-decoration: underline;
+}
+.sample1 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	opacity:		0;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.sample1:hover .mask {
+	opacity:		1;	/* マスクを表示する */
 }
 
 </style>
